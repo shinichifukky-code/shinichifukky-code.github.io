@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>吹田 真一 | 麻酔科専門医・LIGHT CLINIC 総合監修医</title>
-<meta name="description" content="麻酔科専門医／集中治療医。国立循環器病研究センターでの全身管理、国際的な小児心臓病支援活動を経て、医療ダイエット専門「LIGHT CLINIC」を開業。年間1万人の減量を支える医師・吹田真一の公式プロフィール。">
+<title>吹田 真一 | 麻酔科医・LIGHT CLINIC 総合監修医</title>
+<meta name="description" content="麻酔科医／集中治療医。国立循環器病研究センターでの全身管理、国際的な小児心臓病支援活動を経て、医療ダイエット専門「LIGHT CLINIC」を開業。年間1万人の減量を支える医師・吹田真一の公式プロフィール。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
@@ -190,8 +190,11 @@ section{padding:clamp(70px,9vw,120px) 0}
 .book{display:grid;grid-template-columns:220px 1fr;gap:44px;align-items:center}
 @media(max-width:700px){.book{grid-template-columns:1fr;gap:26px}}
 .book .cover{aspect-ratio:3/4.3;background:linear-gradient(150deg,#16273d,#0b1522);
-  border:1px solid rgba(200,164,92,.4);display:flex;align-items:center;justify-content:center;padding:22px;text-align:center}
+  border:1px solid rgba(200,164,92,.4);display:flex;align-items:center;justify-content:center;padding:22px;text-align:center;overflow:hidden}
 .book .cover span{font-family:"Noto Serif JP",serif;font-size:14px;line-height:1.9;color:var(--gold-l);letter-spacing:.06em}
+.book .cover img{width:100%;height:100%;object-fit:cover;display:block;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.press-link{color:var(--gold);font-size:13px;letter-spacing:.08em;text-decoration:none;border-bottom:1px solid rgba(200,164,92,.4);display:inline-block;margin-top:10px;transition:.25s}
+.press-link:hover{color:var(--navy);border-color:var(--navy)}
 .book h3{font-family:"Noto Serif JP",serif;font-size:clamp(19px,2.6vw,26px);line-height:1.65;margin-bottom:16px;color:#fff}
 .book p{color:rgba(255,255,255,.72);font-weight:300;margin-bottom:12px;font-size:14.5px}
 .badge{display:inline-block;border:1px solid var(--gold);color:var(--gold-l);
@@ -239,7 +242,7 @@ footer a:hover{color:var(--gold-l)}
       <span class="en">SHINICHI FUKITA, M.D.</span>
     </div>
     <div class="roles">
-      <span>麻酔科専門医</span>
+      <span>麻酔科医</span>
       <span>集中治療医</span>
       <span>LIGHT CLINIC 総合監修医</span>
       <span>シンメディカル 統括院長</span>
@@ -302,7 +305,7 @@ footer a:hover{color:var(--gold-l)}
       <div class="item rv">
         <span class="yr">CAREER START</span>
         <h4>麻酔科医としてのキャリアをスタート</h4>
-        <p>全身麻酔・区域麻酔・周術期管理の研鑽を積み、日本麻酔科学会 麻酔科専門医を取得。</p>
+        <p>全身麻酔・区域麻酔・周術期管理の研鑽を積み、麻酔科医としての臨床経験を重ねる。</p>
       </div>
       <div class="item rv">
         <span class="yr">NCVC</span>
@@ -332,7 +335,7 @@ footer a:hover{color:var(--gold-l)}
       <div class="item rv">
         <span class="yr">2023.06</span>
         <h4>シンメディカル ——「麻酔科医による痛くない医療」を開始</h4>
-        <p>麻酔科専門医のコントロール下での睡眠麻酔 × 美容医療という、麻酔科医だからこそ設計できる領域を確立。</p>
+        <p>麻酔科医のコントロール下での睡眠麻酔 × 美容医療という、麻酔科医だからこそ設計できる領域を確立。</p>
       </div>
       <div class="item rv">
         <span class="yr">2024.08 —</span>
@@ -357,7 +360,6 @@ footer a:hover{color:var(--gold-l)}
       <p>循環器麻酔という専門領域の資格を基盤に、肥満・代謝の学術領域にも軸足を置いています。</p>
     </div>
     <div class="creds rv">
-      <div>日本麻酔科学会 認定 <strong>麻酔科専門医</strong></div>
       <div>厚生労働省 <strong>麻酔科標榜医／麻酔科認定医</strong></div>
       <div>日本周術期経食道心エコー認定（<strong>JB-POT</strong>）</div>
       <div><strong>日本心臓血管麻酔学会</strong> 会員</div>
@@ -440,7 +442,8 @@ footer a:hover{color:var(--gold-l)}
       <div class="card">
         <div class="ico">PRESS</div>
         <h4>The Wall Street Journal 掲載</h4>
-        <p>国際経済紙にて紹介。※掲載号・記事リンクを差し込む枠です（詳細をご入稿ください）。</p>
+        <p>WSJ「New Era Leaders」にて、次世代のリーダーとして紹介されました。</p>
+        <a class="press-link" href="https://partners.wsj.com/next-era-leaders/advancing-evidence-based-obesity-treatment-and-preventive-health-care-in-japan/" target="_blank" rel="noopener">記事を読む →</a>
       </div>
       <div class="card">
         <div class="ico">RANKING</div>
@@ -464,7 +467,7 @@ footer a:hover{color:var(--gold-l)}
       <h2>著書</h2>
     </div>
     <div class="book rv">
-      <div class="cover"><span>年間1万人が<br>成功する！<br><br>医師が教える、<br>正しいダイエットの<br>見極め方</span></div>
+      <div class="cover"><img src="book-cover.jpg" alt="著書『年間1万人が成功する！ 医師が教える、正しいダイエットの見極め方』表紙"></div>
       <div>
         <h3>『年間1万人が成功する！<br>医師が教える、正しいダイエットの見極め方』</h3>
         <p>ゴマブックス／2026年1月20日 発売</p>
@@ -534,7 +537,7 @@ footer a:hover{color:var(--gold-l)}
   <div class="wrap">
     <div>
       <div style="font-family:'Noto Serif JP',serif;color:#fff;letter-spacing:.14em;margin-bottom:6px">吹田 真一 / SHINICHI FUKITA, M.D.</div>
-      <div>麻酔科専門医・集中治療医／LIGHT CLINIC 総合監修医</div>
+      <div>麻酔科医・集中治療医／LIGHT CLINIC 総合監修医</div>
     </div>
     <div>
       <a href="https://light-clinic.co.jp/" target="_blank" rel="noopener">LIGHT CLINIC</a>　·

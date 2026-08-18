@@ -113,9 +113,17 @@ section{padding:clamp(70px,9vw,120px) 0}
 .portrait{aspect-ratio:4/5;background:
   linear-gradient(160deg,#16273d,#0b1522);
   display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.portrait:after{content:"";position:absolute;inset:14px;border:1px solid rgba(200,164,92,.45)}
+.portrait:after{content:"";position:absolute;inset:14px;border:1px solid rgba(200,164,92,.45);z-index:2}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
 .portrait span{font-family:"Cormorant Garamond",serif;color:rgba(200,164,92,.65);
   font-size:13px;letter-spacing:.3em;text-align:center;padding:0 20px;z-index:2}
+
+/* ---------- mission gallery ---------- */
+.mission-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:40px}
+.mission-gallery figure{margin:0;border:1px solid rgba(200,164,92,.35);overflow:hidden;background:rgba(255,255,255,.03)}
+.mission-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:.4s}
+.mission-gallery figure:hover img{transform:scale(1.04)}
+@media(max-width:700px){.mission-gallery{grid-template-columns:1fr}}
 
 /* ---------- timeline ---------- */
 .tl{position:relative;margin-left:8px}
@@ -275,7 +283,7 @@ footer a:hover{color:var(--gold-l)}
         <p>そしてもう一つ。美容医療の現場で驚いたのは、痛みへの配慮の少なさでした。麻酔科医だからこそ提供できる「痛くない医療」を広めることが、私のもう一つの使命です。</p>
       </div>
       <div class="rv">
-        <div class="portrait"><span>PORTRAIT<br>ここにお写真を配置します</span></div>
+        <div class="portrait"><img src="portrait.jpg" alt="吹田真一 医師 手術室にて"></div>
         <div class="quote" style="margin-top:28px">「人生最後のダイエットを、<br>一緒に実現させましょう。」</div>
       </div>
     </div>
@@ -384,6 +392,11 @@ footer a:hover{color:var(--gold-l)}
       <span class="num">04 — CONTRIBUTION</span>
       <h2>国境を越えて、子どもの心臓を守る。</h2>
       <p>「明美ちゃん基金」は、1966年に始まった先天性心疾患の子どもたちを救うための基金です。私はこの活動に関わり、海外での医療支援にも従事してきました。</p>
+    </div>
+    <div class="mission-gallery rv">
+      <figure><img src="mission-1.jpg" alt="海外医療支援活動 手術室での小児心臓手術のようす1"></figure>
+      <figure><img src="mission-2.jpg" alt="海外医療支援活動 手術室での小児心臓手術のようす2"></figure>
+      <figure><img src="mission-3.jpg" alt="海外医療支援活動 手術室での小児心臓手術のようす3"></figure>
     </div>
     <div class="mediarow">
       <div class="media-item rv">

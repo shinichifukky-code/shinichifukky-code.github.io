@@ -138,7 +138,9 @@ section{padding:clamp(70px,9vw,120px) 0}
 .dark .tl h4{color:#fff}
 
 /* ---------- cards ---------- */
-.cards{display:grid;gap:22px;grid-template-columns:repeat(3,1fr);align-items:start}
+.cards{display:grid;gap:22px;grid-template-columns:repeat(3,1fr);align-items:start;grid-auto-flow:dense}
+.card.wsj-feature{grid-column:span 2}
+@media(max-width:600px){.card.wsj-feature{grid-column:span 1}}
 @media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.cards{grid-template-columns:1fr}}
 .card{background:var(--paper-2);border:1px solid rgba(0,0,0,.06);padding:32px 28px;
@@ -150,6 +152,9 @@ section{padding:clamp(70px,9vw,120px) 0}
 .card .card-photo{margin:-32px -28px 20px;overflow:hidden}
 .card .card-photo img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center 25%;display:block;transition:.4s}
 .card:hover .card-photo img{transform:scale(1.04)}
+.card .card-photo.two-up{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.card .card-photo.two-up img{aspect-ratio:4/3.4;object-position:center top}
+@media(max-width:520px){.card .card-photo.two-up{grid-template-columns:1fr}}
 .card .ico{font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
 .card h4{font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600;margin-bottom:12px;line-height:1.6}
 .card p{font-size:14px;font-weight:300;color:var(--muted)}
@@ -442,11 +447,14 @@ footer a:hover{color:var(--gold-l)}
         <h4>PR TIMES／中日新聞 ほか</h4>
         <p>開院・新技術導入のリリースが各媒体に掲載。「年間1万人が通う医療ダイエット専門クリニック」として紹介されています。</p>
       </div>
-      <div class="card">
-        <div class="card-photo"><img src="wsj-photo.jpg" alt="The Wall Street Journal「New Era Leaders」掲載時の吹田真一"></div>
+      <div class="card wsj-feature">
+        <div class="card-photo two-up">
+          <img src="wsj-photo.jpg" alt="The Wall Street Journal「New Era Leaders」掲載時の吹田真一">
+          <img src="wsj-headline.jpg" alt="WSJ掲載記事「Advancing Evidence-Based Obesity Treatment and Preventive Health Care in Japan」の見出し">
+        </div>
         <div class="ico">PRESS</div>
         <h4>The Wall Street Journal 掲載</h4>
-        <p>WSJ「New Era Leaders」にて、次世代のリーダーとして紹介されました。</p>
+        <p>WSJ「New Era Leaders」にて、次世代のリーダーとして紹介されました。医療の世界で情報の正確さがいかに重要か——という問いから始まる特集記事で、LIGHT CLINICの統括院長としての取り組みが取り上げられています。</p>
         <a class="press-link" href="https://partners.wsj.com/next-era-leaders/advancing-evidence-based-obesity-treatment-and-preventive-health-care-in-japan/" target="_blank" rel="noopener">記事を読む →</a>
       </div>
       <div class="card">

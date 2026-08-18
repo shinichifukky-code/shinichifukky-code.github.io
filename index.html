@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吹田 真一 | 麻酔科専門医・LIGHT CLINIC 総合監修医</title>
+<meta name="description" content="麻酔科専門医／集中治療医。国立循環器病研究センターでの全身管理、国際的な小児心臓病支援活動を経て、医療ダイエット専門「LIGHT CLINIC」を開業。年間1万人の減量を支える医師・吹田真一の公式プロフィール。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d1117;
+  --navy:#101c2e;
+  --navy-2:#16273d;
+  --gold:#c8a45c;
+  --gold-l:#e3c88b;
+  --paper:#f7f5f1;
+  --paper-2:#ffffff;
+  --text:#1c2430;
+  --muted:#6a7280;
+  --line:rgba(200,164,92,.35);
+  --maxw:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  color:var(--text);background:var(--paper);line-height:1.9;
+  font-size:16px;letter-spacing:.02em;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.serif{font-family:"Noto Serif JP","Cormorant Garamond",serif}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;
+  background:rgba(16,28,46,0);backdrop-filter:blur(0);transition:.4s;padding:18px 0}
+.nav.solid{background:rgba(16,28,46,.94);backdrop-filter:blur(12px);padding:12px 0;
+  box-shadow:0 1px 0 rgba(200,164,92,.25)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav .brand{font-family:"Noto Serif JP",serif;color:#fff;font-size:15px;letter-spacing:.18em;white-space:nowrap}
+.nav .brand small{display:block;font-size:9.5px;letter-spacing:.3em;color:var(--gold-l);font-family:"Cormorant Garamond",serif}
+.nav ul{display:flex;gap:26px;list-style:none}
+.nav ul a{color:rgba(255,255,255,.82);text-decoration:none;font-size:12.5px;letter-spacing:.14em;transition:.25s}
+.nav ul a:hover{color:var(--gold-l)}
+@media(max-width:900px){.nav ul{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;
+  background:
+    radial-gradient(1200px 600px at 75% 15%, rgba(200,164,92,.16), transparent 60%),
+    radial-gradient(900px 500px at 10% 90%, rgba(70,120,180,.14), transparent 60%),
+    linear-gradient(160deg,#0b1522 0%,#101c2e 45%,#16273d 100%);
+  overflow:hidden;color:#fff;padding:120px 0 90px}
+.hero:before{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:64px 64px;mask-image:radial-gradient(70% 60% at 50% 40%,#000,transparent)}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:"Cormorant Garamond",serif;
+  font-size:13px;letter-spacing:.42em;color:var(--gold-l);text-transform:uppercase;margin-bottom:26px}
+.eyebrow:before{content:"";width:46px;height:1px;background:var(--gold)}
+.hero h1{font-family:"Noto Serif JP",serif;font-weight:600;line-height:1.35;
+  font-size:clamp(30px,5.4vw,58px);letter-spacing:.04em;margin-bottom:30px}
+.hero h1 .accent{color:var(--gold-l)}
+.hero .name{display:flex;align-items:baseline;gap:22px;flex-wrap:wrap;margin-bottom:22px}
+.hero .name .jp{font-family:"Noto Serif JP",serif;font-size:clamp(34px,6vw,62px);font-weight:600;letter-spacing:.14em}
+.hero .name .en{font-family:"Cormorant Garamond",serif;font-size:15px;letter-spacing:.34em;color:var(--gold-l)}
+.hero .roles{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.hero .roles span{border:1px solid rgba(200,164,92,.5);color:var(--gold-l);
+  padding:6px 15px;border-radius:999px;font-size:12.5px;letter-spacing:.1em}
+.hero p.lead{max-width:640px;color:rgba(255,255,255,.82);font-size:clamp(14.5px,1.6vw,17px);font-weight:300}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
+.btn{display:inline-block;padding:14px 30px;font-size:13.5px;letter-spacing:.16em;text-decoration:none;transition:.3s;border:1px solid var(--gold)}
+.btn.primary{background:var(--gold);color:#0d1117;font-weight:700}
+.btn.primary:hover{background:var(--gold-l)}
+.btn.ghost{color:var(--gold-l)}
+.btn.ghost:hover{background:rgba(200,164,92,.12)}
+.scrollhint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;
+  font-family:"Cormorant Garamond",serif;font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.5)}
+.scrollhint:after{content:"";display:block;width:1px;height:46px;background:linear-gradient(var(--gold),transparent);margin:10px auto 0}
+
+/* ---------- section base ---------- */
+section{padding:clamp(70px,9vw,120px) 0}
+.sec-head{margin-bottom:52px}
+.sec-head .num{font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.36em;color:var(--gold);display:block;margin-bottom:12px}
+.sec-head h2{font-family:"Noto Serif JP",serif;font-size:clamp(23px,3.4vw,36px);font-weight:600;letter-spacing:.08em;line-height:1.5}
+.sec-head p{color:var(--muted);margin-top:14px;font-size:14.5px;font-weight:300;max-width:660px}
+.dark{background:linear-gradient(160deg,#0b1522,#101c2e 60%,#16273d);color:#fff}
+.dark .sec-head h2{color:#fff}
+.dark .sec-head p{color:rgba(255,255,255,.7)}
+
+/* ---------- stats ---------- */
+.stats{background:var(--navy);color:#fff;padding:0}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stats .cell{padding:44px 22px;text-align:center;border-right:1px solid rgba(255,255,255,.09)}
+.stats .cell:last-child{border-right:none}
+.stats .v{font-family:"Cormorant Garamond",serif;font-size:clamp(34px,4.6vw,52px);color:var(--gold-l);line-height:1.1}
+.stats .v small{font-size:.42em;letter-spacing:.08em;margin-left:4px;font-family:"Noto Sans JP",sans-serif}
+.stats .k{font-size:12px;letter-spacing:.14em;color:rgba(255,255,255,.72);margin-top:10px}
+@media(max-width:760px){.stats .grid{grid-template-columns:repeat(2,1fr)}
+ .stats .cell:nth-child(2){border-right:none}
+ .stats .cell:nth-child(1),.stats .cell:nth-child(2){border-bottom:1px solid rgba(255,255,255,.09)}}
+
+/* ---------- philosophy ---------- */
+.philo{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+@media(max-width:880px){.philo{grid-template-columns:1fr;gap:36px}}
+.philo .copy h3{font-family:"Noto Serif JP",serif;font-size:clamp(19px,2.4vw,26px);line-height:1.8;margin-bottom:24px;font-weight:600}
+.philo .copy p{margin-bottom:18px;color:#39424f;font-weight:300}
+.quote{border-left:2px solid var(--gold);padding:22px 0 22px 26px;
+  font-family:"Noto Serif JP",serif;font-size:clamp(16px,2vw,20px);line-height:1.9;color:var(--navy)}
+.portrait{aspect-ratio:4/5;background:
+  linear-gradient(160deg,#16273d,#0b1522);
+  display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.portrait:after{content:"";position:absolute;inset:14px;border:1px solid rgba(200,164,92,.45)}
+.portrait span{font-family:"Cormorant Garamond",serif;color:rgba(200,164,92,.65);
+  font-size:13px;letter-spacing:.3em;text-align:center;padding:0 20px;z-index:2}
+
+/* ---------- timeline ---------- */
+.tl{position:relative;margin-left:8px}
+.tl:before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--gold),rgba(200,164,92,.15))}
+.tl .item{position:relative;padding:0 0 42px 34px}
+.tl .item:last-child{padding-bottom:0}
+.tl .item:before{content:"";position:absolute;left:-4.5px;top:9px;width:10px;height:10px;border-radius:50%;
+  background:var(--gold);box-shadow:0 0 0 4px rgba(200,164,92,.18)}
+.tl .yr{font-family:"Cormorant Garamond",serif;font-size:15px;letter-spacing:.2em;color:var(--gold);margin-bottom:6px;display:block}
+.tl h4{font-family:"Noto Serif JP",serif;font-size:17.5px;font-weight:600;margin-bottom:8px;letter-spacing:.03em}
+.tl p{font-size:14.5px;font-weight:300;color:rgba(255,255,255,.72);max-width:640px}
+.dark .tl h4{color:#fff}
+
+/* ---------- cards ---------- */
+.cards{display:grid;gap:22px;grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}}
+.card{background:var(--paper-2);border:1px solid rgba(0,0,0,.06);padding:32px 28px;
+  transition:.35s;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:.45s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(16,28,46,.09)}
+.card:hover:before{transform:scaleX(1)}
+.card .ico{font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.card h4{font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600;margin-bottom:12px;line-height:1.6}
+.card p{font-size:14px;font-weight:300;color:var(--muted)}
+
+/* ---------- credentials ---------- */
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--line)}
+@media(max-width:700px){.creds{grid-template-columns:1fr}}
+.creds div{padding:22px 26px;border-bottom:1px solid rgba(200,164,92,.18);
+  display:flex;align-items:flex-start;gap:14px;font-size:14.5px}
+.creds div:nth-child(odd){border-right:1px solid rgba(200,164,92,.18)}
+@media(max-width:700px){.creds div:nth-child(odd){border-right:none}}
+.creds div:before{content:"◆";color:var(--gold);font-size:9px;line-height:2.4}
+
+/* ---------- media / sns ---------- */
+.sns{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:860px){.sns{grid-template-columns:repeat(2,1fr)}}
+.sns a{display:block;padding:26px 22px;text-decoration:none;border:1px solid rgba(200,164,92,.35);
+  transition:.3s;background:rgba(255,255,255,.02)}
+.sns a:hover{background:rgba(200,164,92,.12);transform:translateY(-3px)}
+.sns .p{font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.26em;color:var(--gold-l);margin-bottom:8px}
+.sns .h{font-size:14.5px;color:#fff;letter-spacing:.04em}
+.sns .n{font-size:12px;color:rgba(255,255,255,.55);margin-top:6px}
+
+.mediarow{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:760px){.mediarow{grid-template-columns:1fr}}
+.media-item{border:1px solid rgba(255,255,255,.14);padding:26px 24px;background:rgba(255,255,255,.03)}
+.media-item .tag{display:inline-block;font-size:10.5px;letter-spacing:.2em;color:#0d1117;background:var(--gold);padding:3px 10px;margin-bottom:12px}
+.media-item h4{font-family:"Noto Serif JP",serif;font-size:16.5px;font-weight:600;margin-bottom:10px;line-height:1.65;color:#fff}
+.media-item p{font-size:13.5px;font-weight:300;color:rgba(255,255,255,.66)}
+.media-item a{color:var(--gold-l);font-size:12.5px;letter-spacing:.1em;text-decoration:none;border-bottom:1px solid rgba(200,164,92,.4);display:inline-block;margin-top:12px}
+
+/* ---------- clinics ---------- */
+.clinics{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+@media(max-width:900px){.clinics{grid-template-columns:repeat(2,1fr)}}
+.clinic{border:1px solid var(--line);padding:26px 18px;text-align:center;transition:.3s}
+.clinic:hover{background:#fff;box-shadow:0 14px 32px rgba(16,28,46,.08)}
+.clinic .c-n{font-family:"Noto Serif JP",serif;font-size:18px;font-weight:600;letter-spacing:.1em}
+.clinic .c-y{font-family:"Cormorant Garamond",serif;font-size:12.5px;letter-spacing:.18em;color:var(--gold);margin-top:8px}
+
+/* ---------- book ---------- */
+.book{display:grid;grid-template-columns:220px 1fr;gap:44px;align-items:center}
+@media(max-width:700px){.book{grid-template-columns:1fr;gap:26px}}
+.book .cover{aspect-ratio:3/4.3;background:linear-gradient(150deg,#16273d,#0b1522);
+  border:1px solid rgba(200,164,92,.4);display:flex;align-items:center;justify-content:center;padding:22px;text-align:center}
+.book .cover span{font-family:"Noto Serif JP",serif;font-size:14px;line-height:1.9;color:var(--gold-l);letter-spacing:.06em}
+.book h3{font-family:"Noto Serif JP",serif;font-size:clamp(19px,2.6vw,26px);line-height:1.65;margin-bottom:16px;color:#fff}
+.book p{color:rgba(255,255,255,.72);font-weight:300;margin-bottom:12px;font-size:14.5px}
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold-l);
+  padding:5px 14px;font-size:12px;letter-spacing:.12em;margin:4px 6px 4px 0}
+
+/* ---------- cta ---------- */
+.final{background:linear-gradient(160deg,#0b1522,#16273d);color:#fff;text-align:center}
+.final h2{font-family:"Noto Serif JP",serif;font-size:clamp(22px,3.6vw,36px);line-height:1.7;margin-bottom:24px}
+.final p{color:rgba(255,255,255,.72);max-width:620px;margin:0 auto 36px;font-weight:300}
+
+footer{background:#0a121d;color:rgba(255,255,255,.5);padding:44px 0;font-size:12.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer a{color:rgba(255,255,255,.62);text-decoration:none}
+footer a:hover{color:var(--gold-l)}
+.note{margin-top:22px;font-size:11.5px;color:rgba(255,255,255,.34);line-height:1.9}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <div class="brand">吹田 真一<small>SHINICHI FUKITA, M.D.</small></div>
+    <ul>
+      <li><a href="#philosophy">理念</a></li>
+      <li><a href="#career">経歴</a></li>
+      <li><a href="#credentials">資格</a></li>
+      <li><a href="#social">社会貢献</a></li>
+      <li><a href="#media">メディア</a></li>
+      <li><a href="#clinic">クリニック</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Anesthesiologist &amp; Intensivist</span>
+    <div class="name">
+      <span class="jp">吹田 真一</span>
+      <span class="en">SHINICHI FUKITA, M.D.</span>
+    </div>
+    <div class="roles">
+      <span>麻酔科専門医</span>
+      <span>集中治療医</span>
+      <span>LIGHT CLINIC 総合監修医</span>
+      <span>シンメディカル 統括院長</span>
+    </div>
+    <h1>心臓を止めない、<span class="accent">一秒</span>を守る医療から。<br>人生を変える医療へ。</h1>
+    <p class="lead">
+      国立循環器病研究センターで重症循環器患者の全身管理に従事。生死の境界で培った「安全第一」の思想を携え、
+      医療ダイエット専門クリニック <strong>LIGHT CLINIC</strong> を開業。現在は全国5院・年間1万人の体と人生に向き合っています。
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#career">経歴を見る</a>
+      <a class="btn ghost" href="#media">発信・メディア</a>
+    </div>
+  </div>
+  <div class="scrollhint">SCROLL</div>
+</header>
+
+<!-- ================= STATS ================= -->
+<section class="stats" style="padding:0">
+  <div class="grid">
+    <div class="cell rv"><div class="v">10,000<small>人／年</small></div><div class="k">年間来院数（大阪院実績）</div></div>
+    <div class="cell rv"><div class="v">5<small>院</small></div><div class="k">大阪・名古屋・新宿・表参道・福岡</div></div>
+    <div class="cell rv"><div class="v">18.5<small>M+</small></div><div class="k">YouTube 総再生回数</div></div>
+    <div class="cell rv"><div class="v">1,300<small>本+</small></div><div class="k">医療情報の発信本数</div></div>
+  </div>
+</section>
+
+<!-- ================= PHILOSOPHY ================= -->
+<section id="philosophy">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">01 — PHILOSOPHY</span>
+      <h2>「痛みのない医療」と「嘘のない医療」を。</h2>
+      <p>麻酔科医の仕事は、患者さんが眠っているあいだ、呼吸と循環という命の根幹を預かることです。その責任の重さが、いまの私の医療のすべての土台になっています。</p>
+    </div>
+    <div class="philo">
+      <div class="copy rv">
+        <h3>生死を預かる現場から、<br>人生を支える医療へ。</h3>
+        <p>国立循環器病研究センターでは、心臓外科手術の麻酔管理と集中治療を担当してきました。血圧が数十秒で崩れる患者さんの傍らで、モニターの数値ひとつに全神経を集中させる日々。そこで身についたのは、「安全は最初から設計しておくもの」という考え方です。</p>
+        <p>一方で、肥満は心血管疾患の最大級のリスク因子です。私は循環器の現場で、「もっと早く体重に介入できていれば」という症例を何度も見てきました。だからこそ、病気になる前に介入する医療 —— 医療ダイエットという領域を選びました。</p>
+        <p>そしてもう一つ。美容医療の現場で驚いたのは、痛みへの配慮の少なさでした。麻酔科医だからこそ提供できる「痛くない医療」を広めることが、私のもう一つの使命です。</p>
+      </div>
+      <div class="rv">
+        <div class="portrait"><span>PORTRAIT<br>ここにお写真を配置します</span></div>
+        <div class="quote" style="margin-top:28px">「人生最後のダイエットを、<br>一緒に実現させましょう。」</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAREER ================= -->
+<section id="career" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">02 — CAREER</span>
+      <h2>循環器の最前線から、5院の展開まで。</h2>
+      <p>心臓血管麻酔・集中治療という最も緊張度の高い領域でキャリアを積み、その専門性をそのまま美容・予防医療に持ち込みました。</p>
+    </div>
+    <div class="tl">
+      <div class="item rv">
+        <span class="yr">CAREER START</span>
+        <h4>麻酔科医としてのキャリアをスタート</h4>
+        <p>全身麻酔・区域麻酔・周術期管理の研鑽を積み、日本麻酔科学会 麻酔科専門医を取得。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">NCVC</span>
+        <h4>国立循環器病研究センター 麻酔科／集中治療</h4>
+        <p>日本の循環器医療の中核施設で、心臓大血管手術の麻酔管理と重症患者の全身管理に従事。経食道心エコー（JB-POT 認定）を用いた高度なモニタリングを担当。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">INTERNATIONAL</span>
+        <h4>明美ちゃん基金を通じた国際的な小児心臓病支援</h4>
+        <p>先天性心疾患の子どもたちを救う取り組みに関わり、海外での医療支援活動にも従事。国境を越えて「助かるはずの命」を届ける現場を経験しました。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">2021.10</span>
+        <h4>医療法人／運営会社を設立</h4>
+        <p>「病気になる前に介入する医療」を実装するため、医療ダイエット専門クリニックの構想をスタート。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">2022.01</span>
+        <h4>LIGHT CLINIC 大阪院 開院（大阪・梅田）</h4>
+        <p>遺伝子検査に基づくオーダーメイド治療、FDA 認可機器の導入など、エビデンスを軸にした医療ダイエットを開始。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">2023.04</span>
+        <h4>名古屋院 開院（栄駅 徒歩1分）</h4>
+        <p>開院1年余で「年間1万人が通うクリニック」へ。初の分院展開。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">2023.06</span>
+        <h4>シンメディカル ——「麻酔科医による痛くない医療」を開始</h4>
+        <p>麻酔科専門医のコントロール下での睡眠麻酔 × 美容医療という、麻酔科医だからこそ設計できる領域を確立。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">2024.08 —</span>
+        <h4>新宿院・表参道院・福岡院へ展開</h4>
+        <p>大阪・名古屋・新宿・表参道・福岡の5院体制へ。医師・スタッフの教育と診療品質の標準化を総合監修医として統括。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">2026.01</span>
+        <h4>著書『年間1万人が成功する！ 医師が教える、正しいダイエットの見極め方』出版</h4>
+        <p>ゴマブックスより刊行。Amazon ランキング（栄養科学／医療・医学情報学）で1位を獲得。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CREDENTIALS ================= -->
+<section id="credentials">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">03 — CREDENTIALS</span>
+      <h2>資格・所属学会</h2>
+      <p>循環器麻酔という専門領域の資格を基盤に、肥満・代謝の学術領域にも軸足を置いています。</p>
+    </div>
+    <div class="creds rv">
+      <div>日本麻酔科学会 認定 <strong>麻酔科専門医</strong></div>
+      <div>厚生労働省 <strong>麻酔科標榜医／麻酔科認定医</strong></div>
+      <div>日本周術期経食道心エコー認定（<strong>JB-POT</strong>）</div>
+      <div><strong>日本心臓血管麻酔学会</strong> 会員</div>
+      <div><strong>日本肥満学会</strong> 会員</div>
+      <div><strong>集中治療</strong>（重症全身管理）の臨床経験</div>
+    </div>
+
+    <div class="cards" style="margin-top:44px">
+      <div class="card rv">
+        <div class="ico">SAFETY</div>
+        <h4>安全管理は、麻酔科医の本業。</h4>
+        <p>気道・呼吸・循環のモニタリングと急変対応は麻酔科医の中核スキル。美容医療においても、同じ基準で安全設計を行います。</p>
+      </div>
+      <div class="card rv">
+        <div class="ico">EVIDENCE</div>
+        <h4>体重は「意志」ではなく「医学」で動かす。</h4>
+        <p>遺伝子検査・体組成・代謝の評価に基づき、根性論ではなく再現性のあるプロトコルを設計します。</p>
+      </div>
+      <div class="card rv">
+        <div class="ico">PREVENTION</div>
+        <h4>循環器医として、病気になる前に。</h4>
+        <p>肥満は心血管疾患の主要リスク。循環器の現場を知る医師だからこそ、減量を「予防医療」として位置づけています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOCIAL CONTRIBUTION ================= -->
+<section id="social" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">04 — CONTRIBUTION</span>
+      <h2>国境を越えて、子どもの心臓を守る。</h2>
+      <p>「明美ちゃん基金」は、1966年に始まった先天性心疾患の子どもたちを救うための基金です。私はこの活動に関わり、海外での医療支援にも従事してきました。</p>
+    </div>
+    <div class="mediarow">
+      <div class="media-item rv">
+        <span class="tag">明美ちゃん基金</span>
+        <h4>助かるはずの命を、助けられる場所へ。</h4>
+        <p>先天性心疾患は、適切な時期に適切な手術ができれば救える病気です。しかし医療資源の乏しい地域では、その「適切」が届きません。心臓血管麻酔を専門とする医師として、その現場に立ち会ってきました。</p>
+      </div>
+      <div class="media-item rv">
+        <span class="tag">国際医療支援</span>
+        <h4>海外での医療支援活動</h4>
+        <p>国立循環器病研究センターでの全身管理の経験を活かし、海外での医療支援活動に長年従事。文化も設備も異なる環境で、限られた条件のなかで最善の安全を組み立てる経験は、いまの診療の礎になっています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEDIA ================= -->
+<section id="media">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">05 — MEDIA &amp; PUBLICATION</span>
+      <h2>メディア掲載・情報発信</h2>
+      <p>「日本の健康寿命を延ばす」ため、正確な医療情報を届けることを活動の柱に据えています。</p>
+    </div>
+    <div class="cards rv">
+      <div class="card">
+        <div class="ico">RADIO</div>
+        <h4>FM大阪 85.1「それU.K.!! ミライbridge」出演</h4>
+        <p>麻酔科・集中治療医としての歩みと、「痛くない美容医療を広めたい」という理念について語りました。</p>
+      </div>
+      <div class="card">
+        <div class="ico">PROGRAM</div>
+        <h4>「令和の虎」関西版 出演</h4>
+        <p>医療者としての事業観・志を語る番組に出演。</p>
+      </div>
+      <div class="card">
+        <div class="ico">PRESS</div>
+        <h4>PR TIMES／中日新聞 ほか</h4>
+        <p>開院・新技術導入のリリースが各媒体に掲載。「年間1万人が通う医療ダイエット専門クリニック」として紹介されています。</p>
+      </div>
+      <div class="card">
+        <div class="ico">PRESS</div>
+        <h4>The Wall Street Journal 掲載</h4>
+        <p>国際経済紙にて紹介。※掲載号・記事リンクを差し込む枠です（詳細をご入稿ください）。</p>
+      </div>
+      <div class="card">
+        <div class="ico">RANKING</div>
+        <h4>「名医のチョイス」医療ダイエットの名医</h4>
+        <p>医療ダイエット領域の医師として紹介されています。</p>
+      </div>
+      <div class="card">
+        <div class="ico">REVIEW</div>
+        <h4>トリビュー 総合評価 4.4 / 5.0</h4>
+        <p>美容医療プラットフォーム上の患者レビュー（口コミ12件時点）。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOK ================= -->
+<section class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">06 — BOOK</span>
+      <h2>著書</h2>
+    </div>
+    <div class="book rv">
+      <div class="cover"><span>年間1万人が<br>成功する！<br><br>医師が教える、<br>正しいダイエットの<br>見極め方</span></div>
+      <div>
+        <h3>『年間1万人が成功する！<br>医師が教える、正しいダイエットの見極め方』</h3>
+        <p>ゴマブックス／2026年1月20日 発売</p>
+        <p>巷にあふれるダイエット情報を、医師の視点で「何が正しく、何が危険か」に切り分ける一冊。年間1万人の減量に向き合ってきた臨床経験を、再現性のある方法論としてまとめました。</p>
+        <div>
+          <span class="badge">Amazon 栄養科学 ランキング 1位</span>
+          <span class="badge">Amazon 医療・医学情報学 ランキング 1位</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SNS ================= -->
+<section id="sns" class="dark" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">07 — CHANNELS</span>
+      <h2>発信チャンネル</h2>
+      <p>「医療の情報をより正確に。日本の健康寿命延長に尽力します」を掲げ、SNS で日々発信しています。</p>
+    </div>
+    <div class="sns rv">
+      <a href="https://www.youtube.com/@dr.fukky." target="_blank" rel="noopener">
+        <div class="p">YOUTUBE</div><div class="h">ふっきー先生</div><div class="n">登録者 約2.5万人／総再生 1,858万回</div>
+      </a>
+      <a href="https://www.instagram.com/dr.fukky/" target="_blank" rel="noopener">
+        <div class="p">INSTAGRAM</div><div class="h">@dr.fukky</div><div class="n">医療ダイエット専門Dr.</div>
+      </a>
+      <a href="https://www.tiktok.com/@dr.fukky" target="_blank" rel="noopener">
+        <div class="p">TIKTOK</div><div class="h">@dr.fukky</div><div class="n">ふっきー先生</div>
+      </a>
+      <a href="https://x.com/dr_fukky" target="_blank" rel="noopener">
+        <div class="p">X (TWITTER)</div><div class="h">@dr_fukky</div><div class="n">医療情報の発信</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLINIC ================= -->
+<section id="clinic">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">08 — CLINIC</span>
+      <h2>LIGHT CLINIC / シンメディカル</h2>
+      <p>医療ダイエット専門クリニックとして全国5院。総合監修医として全院の診療品質を統括しています。</p>
+    </div>
+    <div class="clinics rv">
+      <div class="clinic"><div class="c-n">大阪院</div><div class="c-y">2022.01 梅田</div></div>
+      <div class="clinic"><div class="c-n">名古屋院</div><div class="c-y">2023.04 栄</div></div>
+      <div class="clinic"><div class="c-n">新宿院</div><div class="c-y">2024.08 新宿</div></div>
+      <div class="clinic"><div class="c-n">表参道院</div><div class="c-y">TOKYO</div></div>
+      <div class="clinic"><div class="c-n">福岡院</div><div class="c-y">天神</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL ================= -->
+<section class="final">
+  <div class="wrap">
+    <h2>体重を落とすことは、<br>人生の選択肢を増やすことだと思っています。</h2>
+    <p>循環器の現場で「もっと早く」と思った経験を、二度と繰り返さないために。あなたの「最後のダイエット」に、医師として伴走します。</p>
+    <a class="btn primary" href="https://light-clinic.co.jp/" target="_blank" rel="noopener">LIGHT CLINIC 公式サイト</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div style="font-family:'Noto Serif JP',serif;color:#fff;letter-spacing:.14em;margin-bottom:6px">吹田 真一 / SHINICHI FUKITA, M.D.</div>
+      <div>麻酔科専門医・集中治療医／LIGHT CLINIC 総合監修医</div>
+    </div>
+    <div>
+      <a href="https://light-clinic.co.jp/" target="_blank" rel="noopener">LIGHT CLINIC</a>　·
+      <a href="https://lit.link/drfukky" target="_blank" rel="noopener">Link in bio</a>
+    </div>
+  </div>
+  <div class="wrap note">
+    ※本ページは医師個人のプロフィール紹介です。掲載している症例数・実績は各公表資料に基づく数値であり、治療効果を保証するものではありません。治療内容・リスク・副作用については各クリニックの診療案内をご確認ください。
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var onScroll=function(){ nav.classList.toggle('solid', window.scrollY>60); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el,i){
+    el.style.transitionDelay=(Math.min(i%4,3)*70)+'ms';
+    io.observe(el);
+  });
+})();
+</script>
+</body>
+</html>

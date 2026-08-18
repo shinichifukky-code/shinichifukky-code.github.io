@@ -147,6 +147,9 @@ section{padding:clamp(70px,9vw,120px) 0}
   background:linear-gradient(90deg,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:.45s}
 .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(16,28,46,.09)}
 .card:hover:before{transform:scaleX(1)}
+.card .card-photo{margin:-32px -28px 20px;overflow:hidden}
+.card .card-photo img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center 25%;display:block;transition:.4s}
+.card:hover .card-photo img{transform:scale(1.04)}
 .card .ico{font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
 .card h4{font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600;margin-bottom:12px;line-height:1.6}
 .card p{font-size:14px;font-weight:300;color:var(--muted)}
@@ -440,6 +443,7 @@ footer a:hover{color:var(--gold-l)}
         <p>開院・新技術導入のリリースが各媒体に掲載。「年間1万人が通う医療ダイエット専門クリニック」として紹介されています。</p>
       </div>
       <div class="card">
+        <div class="card-photo"><img src="wsj-photo.jpg" alt="The Wall Street Journal「New Era Leaders」掲載時の吹田真一"></div>
         <div class="ico">PRESS</div>
         <h4>The Wall Street Journal 掲載</h4>
         <p>WSJ「New Era Leaders」にて、次世代のリーダーとして紹介されました。</p>

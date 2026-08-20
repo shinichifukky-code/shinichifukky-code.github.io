@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全身麻酔の無痛治療 | LIGHT CLINIC ／ 麻酔科医 吹田 真一 監修</title>
+<meta name="description" content="LIGHT CLINIC の無痛治療。麻酔科専門医が全身麻酔・静脈麻酔・リラックス麻酔を管理し、痛みを理由に出力を落とさずに医療脱毛（ジェントルマックス・プロ・プラス®／針脱毛）と肌治療（ポテンツァ・ウルトラセルZi・ピコレーザー ほか）を行うための仕組みを解説します。">
+<link rel="canonical" href="https://shinichifukky-code.github.io/anesthesia.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="全身麻酔の無痛治療 | LIGHT CLINIC ／ 麻酔科医 吹田 真一 監修">
+<meta property="og:description" content="痛みを取ることは、快適さのためだけではありません。適正な出力で施術するための、医学的な条件です。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d1117;
+  --navy:#101c2e;
+  --navy-2:#16273d;
+  --gold:#c8a45c;
+  --gold-l:#e3c88b;
+  --paper:#f7f5f1;
+  --paper-2:#ffffff;
+  --text:#1c2430;
+  --muted:#6a7280;
+  --line:rgba(200,164,92,.35);
+  --maxw:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{
+  font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  color:var(--text);background:var(--paper);line-height:1.9;
+  font-size:16px;letter-spacing:.02em;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.narrow{max-width:860px}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;
+  background:rgba(16,28,46,0);backdrop-filter:blur(0);transition:.4s;padding:18px 0}
+.nav.solid{background:rgba(16,28,46,.94);backdrop-filter:blur(12px);padding:12px 0;
+  box-shadow:0 1px 0 rgba(200,164,92,.25)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav .brand{font-family:"Noto Serif JP",serif;color:#fff;font-size:15px;letter-spacing:.18em;white-space:nowrap;text-decoration:none}
+.nav .brand small{display:block;font-size:9.5px;letter-spacing:.3em;color:var(--gold-l);font-family:"Cormorant Garamond",serif}
+.nav ul{display:flex;gap:22px;list-style:none;align-items:center}
+.nav ul a{color:rgba(255,255,255,.82);text-decoration:none;font-size:12.5px;letter-spacing:.12em;transition:.25s;white-space:nowrap}
+.nav ul a:hover{color:var(--gold-l)}
+.nav ul a.back{color:var(--gold-l);border:1px solid rgba(200,164,92,.45);padding:6px 14px}
+.nav ul a.back:hover{background:rgba(200,164,92,.14)}
+@media(max-width:1040px){.nav ul li:not(.keep){display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:88svh;display:flex;align-items:center;
+  background:
+    radial-gradient(1200px 600px at 75% 15%, rgba(200,164,92,.16), transparent 60%),
+    radial-gradient(900px 500px at 10% 90%, rgba(70,120,180,.14), transparent 60%),
+    linear-gradient(160deg,#0b1522 0%,#101c2e 45%,#16273d 100%);
+  overflow:hidden;color:#fff;padding:130px 0 90px}
+.hero:before{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:64px 64px;mask-image:radial-gradient(70% 60% at 50% 40%,#000,transparent)}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:"Cormorant Garamond",serif;
+  font-size:12.5px;letter-spacing:.34em;color:var(--gold-l);text-transform:uppercase;margin-bottom:26px}
+.eyebrow:before{content:"";width:46px;height:1px;background:var(--gold)}
+.hero h1{font-family:"Noto Serif JP",serif;font-weight:600;line-height:1.42;
+  font-size:clamp(28px,5vw,52px);letter-spacing:.04em;margin-bottom:28px}
+.hero h1 .accent{color:var(--gold-l)}
+.hero .roles{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.hero .roles span{border:1px solid rgba(200,164,92,.5);color:var(--gold-l);
+  padding:6px 15px;border-radius:999px;font-size:12.5px;letter-spacing:.1em}
+.hero p.lead{max-width:680px;color:rgba(255,255,255,.84);font-size:clamp(14.5px,1.6vw,17px);font-weight:300}
+.hero .byline{margin-top:34px;padding-top:22px;border-top:1px solid rgba(200,164,92,.28);
+  font-size:13px;color:rgba(255,255,255,.62);font-weight:300;max-width:680px}
+.hero .byline strong{color:var(--gold-l);font-weight:400}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.btn{display:inline-block;padding:14px 30px;font-size:13.5px;letter-spacing:.16em;text-decoration:none;transition:.3s;border:1px solid var(--gold)}
+.btn.primary{background:var(--gold);color:#0d1117;font-weight:700}
+.btn.primary:hover{background:var(--gold-l)}
+.btn.ghost{color:var(--gold-l)}
+.btn.ghost:hover{background:rgba(200,164,92,.12)}
+
+/* ---------- section base ---------- */
+section{padding:clamp(70px,9vw,116px) 0}
+.sec-head{margin-bottom:50px}
+.sec-head .num{font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.34em;color:var(--gold);display:block;margin-bottom:12px}
+.sec-head h2{font-family:"Noto Serif JP",serif;font-size:clamp(22px,3.3vw,35px);font-weight:600;letter-spacing:.06em;line-height:1.55}
+.sec-head p{color:var(--muted);margin-top:16px;font-size:14.5px;font-weight:300;max-width:700px}
+.dark{background:linear-gradient(160deg,#0b1522,#101c2e 60%,#16273d);color:#fff}
+.dark .sec-head h2{color:#fff}
+.dark .sec-head p{color:rgba(255,255,255,.7)}
+.body-copy p{margin-bottom:18px;color:#39424f;font-weight:300}
+.dark .body-copy p{color:rgba(255,255,255,.76)}
+.lead-q{border-left:2px solid var(--gold);padding:20px 0 20px 26px;margin:34px 0;
+  font-family:"Noto Serif JP",serif;font-size:clamp(16px,2vw,20px);line-height:1.9;color:var(--navy)}
+.dark .lead-q{color:#fff}
+
+/* ---------- tradeoff diagram ---------- */
+.tradeoff{margin:44px 0 10px;border:1px solid var(--line);background:var(--paper-2);padding:34px 30px}
+.tradeoff .cap{font-family:"Cormorant Garamond",serif;font-size:11.5px;letter-spacing:.28em;color:var(--gold);margin-bottom:22px}
+.tradeoff svg{width:100%;height:auto;display:block}
+.tradeoff .note{margin-top:18px;font-size:11.5px;color:var(--muted);font-weight:300;line-height:1.85}
+/* stacked variant for narrow screens — the SVG's type would render at ~4px otherwise */
+.tradeoff .d-narrow{display:none}
+@media(max-width:720px){.tradeoff svg.d-wide{display:none}.tradeoff .d-narrow{display:block}}
+.dstack .lane{margin-bottom:26px}
+.dstack .lane:last-child{margin-bottom:0}
+.dstack .lane + .lane{border-top:1px dashed #e3ded2;padding-top:26px}
+.dstack .lbl{font-family:"Cormorant Garamond",serif;font-size:11px;letter-spacing:.24em;margin-bottom:14px}
+.dstack .lane.a .lbl{color:#9aa3ae}
+.dstack .lane.b .lbl{color:var(--gold)}
+.dstack .bx{border:1px solid #d8d3c8;background:#f3f1ec;padding:14px 16px}
+.dstack .bx .t{font-family:"Noto Serif JP",serif;font-size:14.5px;color:var(--text);line-height:1.6}
+.dstack .bx .s{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.7}
+.dstack .bx .s.bad{color:#8d3f2d}
+.dstack .bx.plain{background:#fff}
+.dstack .bx.navy{background:#16273d;border-color:var(--gold)}
+.dstack .bx.navy .t{color:var(--gold-l)}
+.dstack .bx.navy .s{color:rgba(255,255,255,.62)}
+.dstack .bx.gold{background:#faf7f0;border-color:var(--gold)}
+.dstack .arw{text-align:center;color:var(--gold);font-size:15px;line-height:1;padding:9px 0}
+.dstack .lane.a .arw{color:#9aa3ae}
+.dstack .pair{display:grid;gap:9px}
+
+/* ---------- anesthesia cards ---------- */
+.anes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.anes{grid-template-columns:1fr}}
+.anes .a{border:1px solid rgba(200,164,92,.32);background:rgba(255,255,255,.035);padding:30px 26px;position:relative;
+  display:flex;flex-direction:column}
+.anes .a .lv{font-family:"Cormorant Garamond",serif;font-size:11.5px;letter-spacing:.28em;color:var(--gold);margin-bottom:14px}
+.anes .a h3{font-family:"Noto Serif JP",serif;font-size:20px;font-weight:600;color:#fff;margin-bottom:6px;letter-spacing:.06em}
+.anes .a .en{font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.18em;color:rgba(200,164,92,.75);margin-bottom:16px}
+.anes .a p{font-size:14px;font-weight:300;color:rgba(255,255,255,.76)}
+.anes .a .depth{display:flex;gap:5px;margin-bottom:18px}
+.anes .a .depth i{flex:1;height:3px;background:rgba(255,255,255,.14);display:block}
+.anes .a .depth i.on{background:var(--gold)}
+.anes .a ul{list-style:none;margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,.1)}
+.anes .a p{margin-bottom:18px}
+.anes .a ul li{font-size:13px;font-weight:300;color:rgba(255,255,255,.68);padding-left:16px;position:relative;margin-bottom:7px}
+.anes .a ul li:before{content:"";position:absolute;left:0;top:11px;width:6px;height:1px;background:var(--gold)}
+.anes-extra{margin-top:18px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.02);
+  padding:22px 26px;display:flex;gap:22px;align-items:baseline;flex-wrap:wrap}
+.anes-extra h4{font-family:"Noto Serif JP",serif;font-size:16px;color:#fff;font-weight:600;letter-spacing:.06em;white-space:nowrap}
+.anes-extra p{font-size:13.5px;font-weight:300;color:rgba(255,255,255,.68);flex:1;min-width:260px}
+
+/* ---------- table ---------- */
+.tablewrap{overflow-x:auto;margin-top:40px;border:1px solid rgba(255,255,255,.14)}
+table{border-collapse:collapse;width:100%;min-width:680px;font-size:13.5px}
+th,td{padding:15px 18px;text-align:left;border-bottom:1px solid rgba(255,255,255,.1);vertical-align:top}
+thead th{background:rgba(200,164,92,.13);color:var(--gold-l);font-weight:500;letter-spacing:.1em;font-size:12px;white-space:nowrap}
+tbody th{font-family:"Noto Serif JP",serif;font-weight:600;color:#fff;white-space:nowrap;font-size:14.5px}
+tbody td{color:rgba(255,255,255,.74);font-weight:300}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
+.light-table{border-color:var(--line)}
+.light-table thead th{background:rgba(200,164,92,.14);color:#7a5f22}
+.light-table tbody th{color:var(--navy)}
+.light-table tbody td{color:#39424f}
+.light-table th,.light-table td{border-bottom-color:rgba(0,0,0,.07)}
+
+/* ---------- treatment blocks ---------- */
+.tgroup{margin-bottom:64px}
+.tgroup:last-child{margin-bottom:0}
+.tgroup > .gh{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;
+  border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:34px}
+.tgroup > .gh h3{font-family:"Noto Serif JP",serif;font-size:clamp(19px,2.4vw,25px);font-weight:600;letter-spacing:.06em}
+.tgroup > .gh .en{font-family:"Cormorant Garamond",serif;font-size:12.5px;letter-spacing:.24em;color:var(--gold)}
+
+.tcard{border:1px solid rgba(0,0,0,.07);background:var(--paper-2);padding:32px 30px;margin-bottom:18px;transition:.35s;position:relative;overflow:hidden}
+.tcard:before{content:"";position:absolute;left:0;top:0;width:100%;height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:.45s}
+.tcard:hover{box-shadow:0 16px 38px rgba(16,28,46,.08)}
+.tcard:hover:before{transform:scaleX(1)}
+.tcard h4{font-family:"Noto Serif JP",serif;font-size:18.5px;font-weight:600;margin-bottom:6px;line-height:1.6;letter-spacing:.04em}
+.tcard .sub{font-size:12px;letter-spacing:.14em;color:var(--gold);font-family:"Cormorant Garamond",serif;margin-bottom:16px}
+.tcard > p{font-size:14.5px;font-weight:300;color:#39424f;margin-bottom:20px}
+.tcard .why{border-left:2px solid var(--gold);background:rgba(200,164,92,.055);padding:18px 22px}
+.tcard .why .wl{font-size:11px;letter-spacing:.2em;color:#7a5f22;margin-bottom:8px;font-weight:500}
+.tcard .why p{font-size:14px;font-weight:300;color:#39424f;margin:0}
+.tcard .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.tcard .tags span{border:1px solid var(--line);color:var(--muted);font-size:11.5px;padding:4px 12px;border-radius:999px;letter-spacing:.04em}
+
+.minigrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:760px){.minigrid{grid-template-columns:1fr}}
+.mini{border:1px solid rgba(0,0,0,.07);background:var(--paper-2);padding:26px 24px}
+.mini h4{font-family:"Noto Serif JP",serif;font-size:16.5px;font-weight:600;margin-bottom:10px;letter-spacing:.03em}
+.mini .sub{font-size:11px;letter-spacing:.16em;color:var(--gold);font-family:"Cormorant Garamond",serif;margin-bottom:12px}
+.mini p{font-size:13.5px;font-weight:300;color:var(--muted)}
+.mini .pt{margin-top:14px;padding-top:13px;border-top:1px dashed rgba(200,164,92,.4);font-size:13px;color:#39424f;font-weight:300}
+.mini .pt b{color:#7a5f22;font-weight:500;font-size:11px;letter-spacing:.14em;display:block;margin-bottom:5px}
+
+/* ---------- safety ---------- */
+.safety{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:860px){.safety{grid-template-columns:1fr}}
+.sf{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);padding:28px 26px}
+.sf .ico{font-family:"Cormorant Garamond",serif;font-size:11.5px;letter-spacing:.28em;color:var(--gold);margin-bottom:12px}
+.sf h4{font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600;color:#fff;margin-bottom:11px;line-height:1.6}
+.sf p{font-size:13.5px;font-weight:300;color:rgba(255,255,255,.7)}
+.equip{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.equip span{border:1px solid rgba(200,164,92,.4);color:var(--gold-l);font-size:11.5px;padding:5px 13px;letter-spacing:.06em}
+
+/* ---------- timeline ---------- */
+.tl{position:relative;margin-left:8px}
+.tl:before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--gold),rgba(200,164,92,.15))}
+.tl .item{position:relative;padding:0 0 38px 34px}
+.tl .item:last-child{padding-bottom:0}
+.tl .item:before{content:"";position:absolute;left:-4.5px;top:9px;width:10px;height:10px;border-radius:50%;
+  background:var(--gold);box-shadow:0 0 0 4px rgba(200,164,92,.18)}
+.tl .yr{font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.2em;color:var(--gold);margin-bottom:6px;display:block}
+.tl h4{font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600;margin-bottom:8px;letter-spacing:.03em}
+.tl p{font-size:14px;font-weight:300;color:#39424f;max-width:660px}
+
+/* ---------- notice / risk ---------- */
+.notice{border:1px solid var(--line);background:var(--paper-2);padding:32px 30px;margin-bottom:18px}
+.notice h4{font-family:"Noto Serif JP",serif;font-size:17.5px;font-weight:600;margin-bottom:16px;letter-spacing:.04em}
+.notice ul{list-style:none}
+.notice ul li{font-size:14px;font-weight:300;color:#39424f;padding-left:20px;position:relative;margin-bottom:11px;line-height:1.85}
+.notice ul li:last-child{margin-bottom:0}
+.notice ul li:before{content:"";position:absolute;left:0;top:12px;width:8px;height:1px;background:var(--gold)}
+.notice ul li b{font-weight:500;color:var(--navy)}
+.alert{border-left:3px solid #b4553f;background:rgba(180,85,63,.055)}
+.alert h4{color:#8d3f2d}
+
+/* ---------- faq ---------- */
+.faq details{border-bottom:1px solid var(--line);padding:0}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 44px 24px 34px;position:relative;
+  font-family:"Noto Serif JP",serif;font-size:16px;font-weight:600;letter-spacing:.03em;line-height:1.7;transition:.25s}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:#7a5f22}
+.faq summary:before{content:"Q";position:absolute;left:0;top:24px;font-family:"Cormorant Garamond",serif;
+  font-size:16px;color:var(--gold);letter-spacing:.1em}
+.faq summary:after{content:"";position:absolute;right:8px;top:33px;width:9px;height:9px;
+  border-right:1px solid var(--gold);border-bottom:1px solid var(--gold);transform:rotate(45deg);transition:.3s}
+.faq details[open] summary:after{transform:rotate(-135deg);top:37px}
+.faq .ans{padding:0 44px 26px 34px;font-size:14.5px;font-weight:300;color:#39424f;position:relative}
+.faq .ans:before{content:"A";position:absolute;left:0;top:0;font-family:"Cormorant Garamond",serif;
+  font-size:16px;color:var(--muted);letter-spacing:.1em}
+
+/* ---------- clinics ---------- */
+.clinics{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+@media(max-width:900px){.clinics{grid-template-columns:repeat(2,1fr)}}
+.clinic{border:1px solid var(--line);padding:24px 16px;text-align:center;transition:.3s}
+.clinic:hover{background:#fff;box-shadow:0 14px 32px rgba(16,28,46,.08)}
+.clinic .c-n{font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600;letter-spacing:.1em}
+.clinic .c-y{font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.16em;color:var(--gold);margin-top:7px}
+
+/* ---------- final ---------- */
+.final{background:linear-gradient(160deg,#0b1522,#16273d);color:#fff;text-align:center}
+.final h2{font-family:"Noto Serif JP",serif;font-size:clamp(21px,3.4vw,34px);line-height:1.7;margin-bottom:24px}
+.final p{color:rgba(255,255,255,.72);max-width:640px;margin:0 auto 36px;font-weight:300}
+.final .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+footer{background:#0a121d;color:rgba(255,255,255,.5);padding:44px 0;font-size:12.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer a{color:rgba(255,255,255,.62);text-decoration:none}
+footer a:hover{color:var(--gold-l)}
+.note{margin-top:22px;font-size:11.5px;color:rgba(255,255,255,.36);line-height:1.95}
+.note b{color:rgba(255,255,255,.6);font-weight:500}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">吹田 真一<small>SHINICHI FUKITA, M.D.</small></a>
+    <ul>
+      <li><a href="#why">なぜ無痛か</a></li>
+      <li><a href="#types">麻酔の種類</a></li>
+      <li><a href="#hair">医療脱毛</a></li>
+      <li><a href="#skin">肌治療</a></li>
+      <li><a href="#safety">安全管理</a></li>
+      <li><a href="#flow">当日の流れ</a></li>
+      <li><a href="#price">料金</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li class="keep"><a class="back" href="index.html">プロフィール</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Painless Treatment under Anesthesia</span>
+    <h1>眠っているあいだに、<br><span class="accent">効果が出る出力</span>で。</h1>
+    <div class="roles">
+      <span>全身麻酔</span>
+      <span>静脈麻酔</span>
+      <span>リラックス麻酔</span>
+      <span>麻酔科専門医が管理</span>
+    </div>
+    <p class="lead">
+      LIGHT CLINIC の無痛治療は、快適さのためだけの仕組みではありません。<strong>痛みを理由に出力を落とさずに施術を行う</strong>——
+      医療脱毛や肌治療で本来必要な設定を、安全に成立させるための医学的な条件として、麻酔科専門医が麻酔を管理しています。
+    </p>
+    <div class="byline">
+      監修・麻酔管理 ── <strong>吹田 真一</strong>／麻酔科専門医・集中治療医。国立循環器病研究センターで心臓大血管手術の麻酔管理と重症患者の全身管理に従事。LIGHT CLINIC 総合監修医。
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#types">3つの麻酔を見る</a>
+      <a class="btn ghost" href="#why">なぜ無痛で行うのか</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= 01 WHY ================= -->
+<section id="why">
+  <div class="wrap narrow">
+    <div class="sec-head rv">
+      <span class="num">01 — WHY PAINLESS</span>
+      <h2>「痛い施術」の本当の問題は、<br>痛みそのものではありません。</h2>
+      <p>痛みを取ることは、我慢の量を減らすためだけの配慮ではありません。それは「効果」に直結する、治療設計の問題です。</p>
+    </div>
+    <div class="body-copy rv">
+      <p>医療脱毛も、レーザー治療も、マイクロニードルRFも、HIFU も——効果の大きさは、多くの場合「どれだけのエネルギーを、狙った深さに、必要な範囲へ届けられたか」で決まります。そして、そのエネルギーはほぼ例外なく、痛みと引き換えに増えていきます。</p>
+      <p>つまり痛みを取り除けないクリニックは、施術のたびに次の二択を迫られることになります。</p>
+    </div>
+
+    <div class="tradeoff rv">
+      <div class="cap">CONCEPT — 痛みが治療設計に与える制約（概念図）</div>
+      <svg class="d-wide" viewBox="0 0 760 300" role="img" aria-label="痛みを取り除けない場合、出力を下げて効果を落とすか、我慢させて満足度を下げるかの二択になる。麻酔科医が痛みを取り除くと、適正出力と快適さを両立できるという概念図。">
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#c8a45c"/>
+          </marker>
+          <marker id="arm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#9aa3ae"/>
+          </marker>
+        </defs>
+
+        <!-- left: without anesthesia -->
+        <text x="14" y="24" font-family="'Cormorant Garamond',serif" font-size="12" letter-spacing="2.4" fill="#9aa3ae">WITHOUT ANESTHESIA</text>
+        <rect x="14" y="40" width="196" height="58" fill="#f3f1ec" stroke="#d8d3c8"/>
+        <text x="112" y="66" text-anchor="middle" font-family="'Noto Serif JP',serif" font-size="14" fill="#1c2430">痛みが取り除けない</text>
+        <text x="112" y="86" text-anchor="middle" font-size="11.5" fill="#6a7280">→ 二択を迫られる</text>
+
+        <path d="M 210 60 L 268 60" stroke="#9aa3ae" stroke-width="1" marker-end="url(#arm)"/>
+        <path d="M 210 78 L 268 118" stroke="#9aa3ae" stroke-width="1" marker-end="url(#arm)"/>
+
+        <rect x="272" y="38" width="212" height="52" fill="#fff" stroke="#d8d3c8"/>
+        <text x="288" y="60" font-size="12.5" fill="#1c2430">A. 出力を下げる</text>
+        <text x="288" y="79" font-size="11.5" fill="#8d3f2d">→ 効果が出にくい・回数が増える</text>
+
+        <rect x="272" y="100" width="212" height="52" fill="#fff" stroke="#d8d3c8"/>
+        <text x="288" y="122" font-size="12.5" fill="#1c2430">B. 我慢してもらう</text>
+        <text x="288" y="141" font-size="11.5" fill="#8d3f2d">→ 苦痛・中断・通院の負担</text>
+
+        <!-- divider -->
+        <line x1="14" y1="186" x2="746" y2="186" stroke="#e3ded2" stroke-dasharray="3 4"/>
+
+        <!-- right: with anesthesia -->
+        <text x="14" y="216" font-family="'Cormorant Garamond',serif" font-size="12" letter-spacing="2.4" fill="#c8a45c">WITH ANESTHESIOLOGIST</text>
+        <rect x="14" y="232" width="196" height="52" fill="#16273d" stroke="#c8a45c"/>
+        <text x="112" y="256" text-anchor="middle" font-family="'Noto Serif JP',serif" font-size="14" fill="#e3c88b">麻酔科医が痛みを管理</text>
+        <text x="112" y="274" text-anchor="middle" font-size="11" fill="rgba(255,255,255,.62)">呼吸・循環を連続監視</text>
+
+        <path d="M 210 258 L 268 258" stroke="#c8a45c" stroke-width="1" marker-end="url(#ar)"/>
+
+        <rect x="272" y="232" width="212" height="52" fill="#fff" stroke="#c8a45c"/>
+        <text x="288" y="254" font-size="12.5" fill="#1c2430">適正な出力で施術できる</text>
+        <text x="288" y="273" font-size="11.5" fill="#6a7280">かつ、痛みの記憶も残らない</text>
+
+        <path d="M 484 258 L 542 258" stroke="#c8a45c" stroke-width="1" marker-end="url(#ar)"/>
+        <rect x="546" y="220" width="200" height="76" fill="#faf7f0" stroke="#c8a45c"/>
+        <text x="646" y="248" text-anchor="middle" font-family="'Noto Serif JP',serif" font-size="13.5" fill="#1c2430">1回あたりの密度が上がる</text>
+        <text x="646" y="270" text-anchor="middle" font-size="11.5" fill="#6a7280">通院回数・総期間の短縮に</text>
+        <text x="646" y="286" text-anchor="middle" font-size="11.5" fill="#6a7280">つながりやすくなる</text>
+
+        <path d="M 484 64 L 542 64" stroke="#9aa3ae" stroke-width="1" marker-end="url(#arm)"/>
+        <rect x="546" y="42" width="200" height="68" fill="#f3f1ec" stroke="#d8d3c8"/>
+        <text x="646" y="70" text-anchor="middle" font-family="'Noto Serif JP',serif" font-size="13.5" fill="#6a7280">効果は後からしか</text>
+        <text x="646" y="90" text-anchor="middle" font-family="'Noto Serif JP',serif" font-size="13.5" fill="#6a7280">わからない</text>
+      </svg>
+
+      <div class="dstack d-narrow" aria-hidden="true">
+        <div class="lane a">
+          <div class="lbl">WITHOUT ANESTHESIA</div>
+          <div class="bx"><div class="t">痛みが取り除けない</div><div class="s">→ 二択を迫られる</div></div>
+          <div class="arw">↓</div>
+          <div class="pair">
+            <div class="bx plain"><div class="t">A. 出力を下げる</div><div class="s bad">→ 効果が出にくい・回数が増える</div></div>
+            <div class="bx plain"><div class="t">B. 我慢してもらう</div><div class="s bad">→ 苦痛・中断・通院の負担</div></div>
+          </div>
+          <div class="arw">↓</div>
+          <div class="bx"><div class="t">効果は後からしかわからない</div></div>
+        </div>
+        <div class="lane b">
+          <div class="lbl">WITH ANESTHESIOLOGIST</div>
+          <div class="bx navy"><div class="t">麻酔科医が痛みを管理</div><div class="s">呼吸・循環を連続監視</div></div>
+          <div class="arw">↓</div>
+          <div class="bx plain" style="border-color:var(--gold)"><div class="t">適正な出力で施術できる</div><div class="s">かつ、痛みの記憶も残らない</div></div>
+          <div class="arw">↓</div>
+          <div class="bx gold"><div class="t">1回あたりの密度が上がる</div><div class="s">通院回数・総期間の短縮につながりやすくなる</div></div>
+        </div>
+      </div>
+
+      <div class="note">※本図は治療設計の考え方を示した概念図です。効果の程度には個人差があり、すべての方に同様の結果を保証するものではありません。</div>
+    </div>
+
+    <div class="body-copy rv" style="margin-top:44px">
+      <p>厄介なのは、A を選んでも患者さんにはその場でわからないことです。出力を落とした施術は「痛くなかった」という良い印象すら残します。効果が足りないと気づくのは、数か月後に「思ったより減っていない」と感じたときです。</p>
+      <p>美容医療の現場に、麻酔の専門家はほとんどいません。麻酔科医が在籍するクリニックは、業界全体の1%にも満たないのが現実です。だからこそ多くの施設では、この二択そのものを避けられません。</p>
+    </div>
+    <div class="lead-q rv">痛みを取り除くことは、<br>「適正な出力で治療する」ための前提条件です。</div>
+    <div class="body-copy rv">
+      <p>私たちは麻酔科専門医の管理下で、外科手術を何時間でも安全に行えるレベルの麻酔器・生体モニター・急変対応体制を整えた上で、医療脱毛と肌治療を提供しています。「効果は高いが痛い」施術を、本来の設定のままで受けていただくためです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 TYPES ================= -->
+<section id="types" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">02 — ANESTHESIA</span>
+      <h2>3つの麻酔を、施術と体質に合わせて。</h2>
+      <p>「全身麻酔」だけが選択肢ではありません。施術の内容・時間・痛みの強さ、そして患者さんご自身の不安の程度に応じて、麻酔科専門医が最適な深さを設計します。</p>
+    </div>
+
+    <div class="anes">
+      <div class="a rv">
+        <div class="lv">LEVEL 01</div>
+        <div class="depth"><i class="on"></i><i></i><i></i></div>
+        <h3>リラックス麻酔</h3>
+        <div class="en">SEDATION / ANXIOLYSIS</div>
+        <p>精神的に落ち着きをもたらし、痛みの緩和効果があります。意識は保たれたまま、緊張と不安がやわらいだ状態で施術を受けられます。</p>
+        <ul>
+          <li>意識：あり（ぼんやりとした状態）</li>
+          <li>会話：可能</li>
+          <li>比較的短時間・痛みが中等度の施術に</li>
+          <li>「怖さ」が主な障壁になっている方に</li>
+        </ul>
+      </div>
+      <div class="a rv">
+        <div class="lv">LEVEL 02</div>
+        <div class="depth"><i class="on"></i><i class="on"></i><i></i></div>
+        <h3>静脈麻酔</h3>
+        <div class="en">INTRAVENOUS SEDATION</div>
+        <p>痛みへの不安や恐怖心を和らげる効果があり、半分眠っているような状態になります。施術中の記憶が残りにくいのも特徴です。</p>
+        <ul>
+          <li>意識：うとうとした状態</li>
+          <li>点滴から鎮静薬を持続投与</li>
+          <li>中等度〜強い痛みを伴う施術に</li>
+          <li>全身麻酔までは要さない範囲・時間に</li>
+        </ul>
+      </div>
+      <div class="a rv">
+        <div class="lv">LEVEL 03</div>
+        <div class="depth"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+        <h3>全身麻酔</h3>
+        <div class="en">GENERAL ANESTHESIA</div>
+        <p>意識が完全に消失し、全身の痛みを消失させます。施術中の痛みはありません。気道と呼吸・循環を麻酔科医が管理下に置いた状態で行います。</p>
+        <ul>
+          <li>意識：完全に消失</li>
+          <li>プロポフォール・セボフルラン等を使用</li>
+          <li>強い痛みを伴う施術／長時間・広範囲に</li>
+          <li>複数施術をまとめて行う場合に</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="anes-extra rv">
+      <h4>笑気麻酔</h4>
+      <p>亜酸化窒素（笑気ガス）を吸入する、もっとも軽い鎮静です。30分単位での併用が可能で、痛みが比較的軽い施術や、他の麻酔の導入前の緊張緩和に用います。</p>
+    </div>
+
+    <div class="tablewrap rv">
+      <table>
+        <thead>
+          <tr>
+            <th>麻酔の種類</th><th>意識</th><th>施術中の痛み</th><th>主な適応</th><th>絶食</th><th>当日の運転</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>全身麻酔</th>
+            <td>完全に消失</td>
+            <td>なし</td>
+            <td>針脱毛の広範囲、VIO・ヒゲの高出力照射、ポテンツァ、ミラドライ、糸リフト、複数施術の同日実施</td>
+            <td>必要</td>
+            <td>不可</td>
+          </tr>
+          <tr>
+            <th>静脈麻酔</th>
+            <td>半分眠っているような状態</td>
+            <td>ほとんど感じない</td>
+            <td>レーザー脱毛、ピコレーザー、ウルトラセルZi、各種注入治療</td>
+            <td>必要</td>
+            <td>不可</td>
+          </tr>
+          <tr>
+            <th>リラックス麻酔</th>
+            <td>あり（緊張が緩和した状態）</td>
+            <td>緩和される</td>
+            <td>痛みが中等度の施術、注射への不安が強い方</td>
+            <td>要相談</td>
+            <td>不可</td>
+          </tr>
+          <tr>
+            <th>笑気麻酔</th>
+            <td>あり（ふわふわした感覚）</td>
+            <td>やわらぐ</td>
+            <td>短時間の施術、導入前の緊張緩和</td>
+            <td>不要な場合が多い</td>
+            <td>要相談</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;font-size:12px;color:rgba(255,255,255,.42);font-weight:300">※適応は目安です。施術内容・範囲・所要時間・既往歴によって、診察のうえ麻酔科医が最終的に判断します。</p>
+  </div>
+</section>
+
+<!-- ================= 03 HAIR REMOVAL ================= -->
+<section id="hair">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">03 — HAIR REMOVAL</span>
+      <h2>医療脱毛を、麻酔下で。</h2>
+      <p>脱毛は「痛みを取ると効果が変わる」代表的な施術です。レーザーも針も、毛根を確実に破壊できるだけのエネルギーを届けて初めて成立します。</p>
+    </div>
+
+    <div class="tgroup rv">
+      <div class="tcard">
+        <h4>医療脱毛（ジェントルマックス・プロ・プラス®）</h4>
+        <div class="sub">GENTLEMAX PRO PLUS — DUAL WAVELENGTH LASER</div>
+        <p>アレキサンドライトレーザーと Nd:YAG レーザーの2波長を、肌質・毛質・部位に応じて使い分ける医療レーザー脱毛機です。高いエネルギーを照射して毛根（毛乳頭・バルジ領域）を破壊することで、サロン脱毛では得られない長期的な減毛効果を目指します。冷却ガスによる肌表面の保護機構を備えています。</p>
+        <div class="why">
+          <div class="wl">麻酔下で行う意味</div>
+          <p>レーザー脱毛の効果は照射出力（フルエンス）に強く依存します。毛が濃く密度の高い部位——ヒゲ、VIO、男性の胸腹部・背中——ほど発生する熱量が大きく、痛みも比例して強くなります。痛みを基準に出力を決めると、もっとも効果を出したい部位ほど設定を落とすことになりかねません。麻酔下では、肌の安全域の範囲内で必要な出力を選択でき、1回あたりの効率を落とさずに済みます。また、途中で休憩を挟まずに広範囲を一度に照射できるため、施術時間そのものも短くなります。</p>
+        </div>
+        <div class="tags"><span>ヒゲ</span><span>VIO</span><span>全身</span><span>男性の濃い体毛</span><span>照射時の痛みが強い部位</span></div>
+      </div>
+
+      <div class="tcard">
+        <h4>医療脱毛（針脱毛・ニードル脱毛）</h4>
+        <div class="sub">ELECTROLYSIS / NEEDLE EPILATION</div>
+        <p>毛穴に極細の針を刺し、電気や高周波のエネルギーを流して毛根を破壊する脱毛方法です。毛根を直接破壊するため、同じ毛穴からはもう毛が生えない仕組みです。毛の色（メラニン）に反応させる方式ではないため、<b>白髪・金髪・産毛</b>にも効果があり、レーザーが反応してしまう<b>タトゥー部位</b>にも施術できます。1本ずつ処理するのでミリ単位のデザイン脱毛も可能で、レーザーで硬毛化した毛の対処にも用いられます。</p>
+        <div class="why">
+          <div class="wl">麻酔下で行う意味</div>
+          <p>針脱毛は「チクチク」「パチパチ」とした痛みを、毛1本ごとに繰り返し受ける施術です。痛みの総量が処理できる本数の上限を決めてしまうため、無麻酔では1回の施術で進められる範囲がどうしても限られ、完了までの回数と期間が伸びます。麻酔下であれば、痛みではなく施術時間を基準にまとまった本数を一度に処理できます。レーザーが効かない白髪や産毛を根本的に解決したい方、レーザー脱毛の仕上げとして残った毛を処理したい方にとって、現実的な選択肢になります。</p>
+        </div>
+        <div class="tags"><span>白髪・金髪</span><span>産毛</span><span>タトゥー部位</span><span>デザイン脱毛</span><span>硬毛化した毛</span><span>レーザー後の仕上げ</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 SKIN ================= -->
+<section id="skin" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">04 — SKIN TREATMENT</span>
+      <h2>肌治療を、本来の設定で。</h2>
+      <p>肌治療でも構図は同じです。針の深さ、照射のショット数、注入する本数——効果を決める変数のほとんどが、痛みによって制限されます。</p>
+    </div>
+
+    <div class="tgroup rv">
+      <div class="gh"><h3>エネルギー系（レーザー・RF・HIFU）</h3><span class="en">ENERGY-BASED DEVICES</span></div>
+      <div class="minigrid">
+        <div class="mini">
+          <div class="sub">MICRONEEDLE RF</div>
+          <h4>ポテンツァ</h4>
+          <p>極細の針を皮膚に刺入し、先端から高周波（RF）を流して真皮に熱刺激を与える治療。ニキビ跡・毛穴・肌質改善などに用います。</p>
+          <div class="pt"><b>無痛で行う意味</b>効果は針の刺入深度と RF 出力で決まります。痛みで浅く弱い設定にすると、狙った層に十分な熱が入りません。麻酔下なら、適応に応じた深度・出力を選べます。</div>
+        </div>
+        <div class="mini">
+          <div class="sub">HIFU</div>
+          <h4>ウルトラセルZi</h4>
+          <p>高密度焦点式超音波を皮下の複数の層に照射し、たるみの引き締めを図る治療。SMAS 層への照射が特徴です。</p>
+          <div class="pt"><b>無痛で行う意味</b>リフト効果はショット数と照射する深さに比例します。痛みでショット数を減らすと効果が落ち、深い層を避ければ本来の目的が果たせません。</div>
+        </div>
+        <div class="mini">
+          <div class="sub">PICO LASER</div>
+          <h4>ディスカバリーピコプラス</h4>
+          <p>ピコトーニング／ピコフラクショナル／ルビーフラクショナル／ピコシャワー／ピコスポットに対応。シミ・肝斑・肌質改善、アートメイクや刺青の除去にも用います。</p>
+          <div class="pt"><b>無痛で行う意味</b>ピコスポットや刺青除去は「輪ゴムで強く弾かれる」ような痛みを伴い、範囲が広いほど負担が増します。麻酔下なら一度にまとめて照射できます。</div>
+        </div>
+        <div class="mini">
+          <div class="sub">MICROWAVE</div>
+          <h4>ミラドライ</h4>
+          <p>マイクロ波を照射して腋窩の汗腺（エクリン腺・アポクリン腺）にはたらきかける、ワキ汗・ワキガの治療です。</p>
+          <div class="pt"><b>無痛で行う意味</b>局所麻酔だけで行う場合、広範囲に多数の麻酔注射を打つ工程自体が強い苦痛になります。麻酔下ならその工程を含めて負担なく完了できます。</div>
+        </div>
+        <div class="mini">
+          <div class="sub">MONOPOLAR RF</div>
+          <h4>ボルニューマ</h4>
+          <p>高周波によって皮膚深部を加熱し、引き締めとハリの改善を図る治療です。</p>
+          <div class="pt"><b>無痛で行う意味</b>加熱の温度と時間が効果を左右します。熱感が強く出る設定ほど効果が期待できる一方、我慢の限界が上限になってしまいます。</div>
+        </div>
+        <div class="mini">
+          <div class="sub">THREAD LIFT</div>
+          <h4>糸リフト</h4>
+          <p>溶ける糸を皮下に挿入し、たるみを物理的に引き上げる治療です。</p>
+          <div class="pt"><b>無痛で行う意味</b>挿入時の圧迫感や引き上げ時の痛みが強く、本数を増やすほど負担が増えます。麻酔下なら必要な本数を落とさずに設計できます。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tgroup rv">
+      <div class="gh"><h3>注入系（スキンブースター・注射治療）</h3><span class="en">INJECTABLES</span></div>
+      <div class="minigrid">
+        <div class="mini">
+          <div class="sub">SKIN BOOSTER</div>
+          <h4>スキンブースター／ハイコックス（水光注射）</h4>
+          <p>ヒアルロン酸や有効成分を、肌の浅い層へ細かく多数注入して、うるおいとハリを補う治療です。</p>
+          <div class="pt"><b>無痛で行う意味</b>「面」で効果を出すには注入点の数がそのまま結果になります。痛みで本数を減らせばムラが出ます。</div>
+        </div>
+        <div class="mini">
+          <div class="sub">REGENERATIVE</div>
+          <h4>リジュラン／ジュベルック／スネコス ほか</h4>
+          <p>肌の再生や質感の改善を目的とした注入治療。複数回のコース設計が前提になることが多い治療です。</p>
+          <div class="pt"><b>無痛で行う意味</b>痛みが強く、通うこと自体が負担になりがちです。麻酔下なら「継続できずに途中でやめる」ことを避けられます。</div>
+        </div>
+        <div class="mini">
+          <div class="sub">FILLER / BOTOX</div>
+          <h4>ヒアルロン酸／ボトックス注射</h4>
+          <p>しわ・ボリューム・エラや多汗症など、部位と目的に応じて用いる注入治療です。</p>
+          <div class="pt"><b>無痛で行う意味</b>注射そのものへの恐怖が強い方、複数部位を同日にまとめたい方に適しています。</div>
+        </div>
+        <div class="mini">
+          <div class="sub">LIPOLYSIS</div>
+          <h4>脂肪溶解注射</h4>
+          <p>部分痩せを目的に、皮下脂肪へ薬剤を注入する治療です。</p>
+          <div class="pt"><b>無痛で行う意味</b>注入本数と範囲が効果を決めます。1回で広い範囲をしっかり処置したい場合に有効です。</div>
+        </div>
+      </div>
+      <p style="margin-top:22px;font-size:12.5px;color:var(--muted);font-weight:300">
+        ※上記のほか、トライフィル・プロ、プルリアルデンシファイ、ボライトなども麻酔下での施術対象です。取り扱い施術・対応院は変更される場合がありますので、最新の情報は
+        <a href="https://light-clinic.co.jp/service/anesthesia-2/" target="_blank" rel="noopener" style="color:#7a5f22;border-bottom:1px solid var(--line);text-decoration:none">LIGHT CLINIC 公式サイト</a> をご確認ください。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 SAFETY ================= -->
+<section id="safety" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">05 — SAFETY</span>
+      <h2>麻酔は「かけること」より、<br>「戻すこと」が難しい。</h2>
+      <p>美容医療でのトラブルの多くは、施術そのものではなく麻酔管理の体制に起因します。施術医が麻酔を兼任し、急変時の対応が追いつかない——その構造をつくらないことが、私たちの前提です。</p>
+    </div>
+    <div class="safety">
+      <div class="sf rv">
+        <div class="ico">SPECIALIST</div>
+        <h4>麻酔科専門医が、麻酔だけを担当する</h4>
+        <p>施術を行う医師とは別に、日本麻酔科学会の麻酔科専門医が麻酔管理に専従します。国立循環器病研究センターで心臓大血管手術の麻酔と重症患者の全身管理に従事してきた医師が、呼吸と循環を連続してモニタリングします。施術者が麻酔を兼任することはありません。</p>
+      </div>
+      <div class="sf rv">
+        <div class="ico">EQUIPMENT</div>
+        <h4>手術室と同等の設備を用意する</h4>
+        <p>「美容クリニックだから簡易な設備で」という考え方は取りません。外科手術を長時間行える水準の麻酔器とモニタリング機器、急変時に必要な薬剤・器材を常備した状態で麻酔を導入します。</p>
+        <div class="equip">
+          <span>全身麻酔器</span><span>生体モニター</span><span>シリンジポンプ</span><span>輸液ポンプ</span><span>麻酔関連薬品</span><span>気道管理器材</span>
+        </div>
+      </div>
+      <div class="sf rv">
+        <div class="ico">ASSESSMENT</div>
+        <h4>事前の全身評価を省略しない</h4>
+        <p>既往歴・内服薬・アレルギー歴・過去の麻酔経験・悪性高熱症の家族歴などを診察で確認し、必要に応じて検査を行います。安全に麻酔をかけられないと判断した場合は、麻酔を伴わない方法をご提案するか、施術自体をお断りすることがあります。</p>
+      </div>
+      <div class="sf rv">
+        <div class="ico">RECOVERY</div>
+        <h4>覚醒まで見届ける</h4>
+        <p>麻酔の管理は、薬を止めた時点では終わりません。意識・呼吸・循環が安定し、ご自身で安全に帰宅できる状態を確認するまでが麻酔科医の担当範囲です。回復室でのモニタリングを経てからのご帰宅となります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 FLOW ================= -->
+<section id="flow">
+  <div class="wrap narrow">
+    <div class="sec-head rv">
+      <span class="num">06 — FLOW</span>
+      <h2>当日までの流れ</h2>
+      <p>麻酔を伴う施術には、通常の美容施術にはない準備が必要です。特に絶食は、安全に直結する最も重要な項目です。</p>
+    </div>
+    <div class="tl">
+      <div class="item rv">
+        <span class="yr">STEP 01</span>
+        <h4>カウンセリング・診察</h4>
+        <p>ご希望の施術内容を確認し、既往歴・内服薬・アレルギー歴・過去の麻酔経験などを伺います。そのうえで、麻酔科医が全身麻酔・静脈麻酔・リラックス麻酔のいずれが適切かを判断し、リスクを含めてご説明します。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">STEP 02</span>
+        <h4>前日〜当日の準備</h4>
+        <p><b>施術予定時刻の5時間前から食事を摂らないでください。飲み物は施術2時間前から制限となります。</b>胃の内容物が残っていると、麻酔中の誤嚥という重大な合併症につながります。守られていない場合は、安全のため施術を延期させていただきます。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">STEP 03</span>
+        <h4>ご来院・準備</h4>
+        <p>メイクはせずにご来院ください。コンタクトレンズは外していただきます。ヒールの高い靴は避け、ゆったりとした服装をおすすめします。アクセサリー類も外していただきます。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">STEP 04</span>
+        <h4>モニター装着・静脈路の確保</h4>
+        <p>心電図・血圧計・パルスオキシメーターなどの生体モニターを装着し、点滴のルートを確保します。ここから麻酔科医による全身管理が始まります。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">STEP 05</span>
+        <h4>麻酔導入 ── 施術</h4>
+        <p>選択した麻酔を導入し、眠りに入っていただきます。施術中は麻酔科医が呼吸・循環・麻酔深度を継続して監視し、必要に応じて調整します。施術医は施術に専念します。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">STEP 06</span>
+        <h4>覚醒・リカバリー</h4>
+        <p>麻酔から目覚めたあと、回復室で状態が安定するまで休んでいただきます。麻酔の種類と施術内容によって必要な時間は異なります。</p>
+      </div>
+      <div class="item rv">
+        <span class="yr">STEP 07</span>
+        <h4>ご帰宅</h4>
+        <p><b>施術当日の車・バイク・自転車の運転はできません。</b>公共交通機関でのご帰宅、またはご家族・ご友人のお迎えをご準備ください。判断力や反射が完全に戻るまでには時間がかかります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 PRICE ================= -->
+<section id="price" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">07 — FEE</span>
+      <h2>麻酔の費用</h2>
+      <p>下記は麻酔にかかる費用です。施術そのものの費用は別途必要となります。いずれも公的医療保険が適用されない自由診療です。</p>
+    </div>
+    <div class="tablewrap rv">
+      <table>
+        <thead>
+          <tr><th>麻酔の種類</th><th>単位</th><th>費用（税込）</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>全身麻酔</th><td>2単位まで／1回</td><td>¥88,000</td></tr>
+          <tr><th>静脈麻酔</th><td>2単位まで／1回</td><td>¥55,000</td></tr>
+          <tr><th>リラックス麻酔</th><td>3〜4時間／1回</td><td>¥33,000</td></tr>
+          <tr><th>笑気麻酔</th><td>30分／1回</td><td>¥5,500</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:18px;font-size:12.5px;color:rgba(255,255,255,.5);font-weight:300;line-height:1.9">
+      ※3回〜15回の複数回プランによる割引設定があります。<br>
+      ※上記は自由診療（自費診療）であり、公的医療保険は適用されません。<br>
+      ※施術費用は別途必要です。麻酔の種類・単位数は施術内容と所要時間により決まります。<br>
+      ※料金は改定される場合があります。最新の料金・複数回プランの詳細は各院にお問い合わせください。
+    </p>
+  </div>
+</section>
+
+<!-- ================= 08 RISK ================= -->
+<section id="risk">
+  <div class="wrap narrow">
+    <div class="sec-head rv">
+      <span class="num">08 — RISK &amp; SIDE EFFECTS</span>
+      <h2>リスク・副作用について</h2>
+      <p>麻酔は安全性の高い医療技術ですが、リスクがゼロの医療は存在しません。起こりうることと、それに対する備えを事前にお伝えします。</p>
+    </div>
+
+    <div class="notice rv">
+      <h4>麻酔に伴う主なリスク・副作用</h4>
+      <ul>
+        <li><b>呼吸抑制</b> ── 麻酔薬の作用で呼吸が浅くなることがあります。酸素投与と気道確保、必要に応じた補助換気で対応します。麻酔科医が常時モニタリングしています。</li>
+        <li><b>血圧低下・徐脈</b> ── 麻酔導入時に起こりうる循環の変動です。輸液と昇圧薬などで速やかに対応します。</li>
+        <li><b>アレルギー反応</b> ── 麻酔薬に対するアレルギーが生じる可能性があります。重篤な場合（アナフィラキシー）に備え、対応薬剤と器材を常備しています。</li>
+        <li><b>誤嚥</b> ── 胃の内容物が気道へ流れ込む合併症です。絶食を厳守いただくことが最大の予防策となります。</li>
+        <li><b>術後の吐き気・嘔吐</b> ── 麻酔後にみられることがあります。制吐薬で対応します。</li>
+        <li><b>頭痛・ふらつき・眠気</b> ── 覚醒後しばらく残ることがあります。当日の運転・重要な判断は避けてください。</li>
+        <li><b>注射部位の痛み・内出血</b> ── 点滴の刺入部に生じることがあります。多くは数日で消退します。</li>
+      </ul>
+    </div>
+
+    <div class="notice rv">
+      <h4>施術に伴う主なリスク・副作用</h4>
+      <ul>
+        <li><b>医療脱毛（レーザー）</b> ── 赤み、ほてり、毛嚢炎、色素沈着、まれに熱傷。硬毛化・増毛化が生じることがあります。</li>
+        <li><b>医療脱毛（針脱毛）</b> ── 赤み・腫れ・ヒリヒリ感・熱感が1〜2週間程度続くことがあります。</li>
+        <li><b>レーザー・RF・HIFU 治療</b> ── 赤み、腫れ、内出血、一時的な色素沈着、乾燥、まれに熱傷や神経症状。</li>
+        <li><b>注入治療</b> ── 内出血、腫れ、しこり、感染、左右差。血管内注入による循環障害はまれですが重篤な合併症です。</li>
+        <li><b>共通</b> ── 効果の程度には個人差があり、期待される結果が得られない場合があります。複数回の施術が必要になることが一般的です。</li>
+      </ul>
+    </div>
+
+    <div class="notice alert rv">
+      <h4>麻酔を受けられない方・事前のご相談が必要な方</h4>
+      <ul>
+        <li>妊娠中・妊娠の可能性がある方、授乳中の方</li>
+        <li>重篤な心疾患・呼吸器疾患をお持ちの方、コントロールが不良な全身疾患のある方</li>
+        <li>麻酔薬・鎮静薬に対するアレルギーの既往がある方</li>
+        <li>ご自身またはご家族に悪性高熱症の既往がある方</li>
+        <li>睡眠時無呼吸症候群と診断されている方、極度の肥満のある方</li>
+        <li>常用薬がある方（種類によって麻酔薬と相互作用を起こすことがあります）</li>
+        <li>絶食の指示が守れなかった方（当日の施術は延期となります）</li>
+        <li>施術後にご自身での帰宅が困難で、付き添いを手配できない方</li>
+      </ul>
+    </div>
+    <p class="rv" style="margin-top:22px;font-size:13px;color:var(--muted);font-weight:300;line-height:1.9">
+      該当する項目があっても、状態によっては麻酔が可能な場合があります。自己判断で諦めず、診察時に必ずお伝えください。逆に、該当がなくても診察の結果、安全のために麻酔をお断りすることがあります。
+    </p>
+  </div>
+</section>
+
+<!-- ================= 09 FAQ ================= -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap narrow">
+    <div class="sec-head rv">
+      <span class="num">09 — FAQ</span>
+      <h2>よくあるご質問</h2>
+    </div>
+    <div class="faq rv">
+      <details>
+        <summary>全身麻酔と聞くと怖いのですが、美容の施術で使って大丈夫なのでしょうか。</summary>
+        <div class="ans">全身麻酔そのものは、外科手術で日常的に行われている確立された医療技術です。重要なのは「誰が、どんな体制で管理するか」です。当院では施術医とは別に麻酔科専門医が麻酔管理に専従し、手術室と同等の麻酔器・生体モニター・急変対応の薬剤と器材を備えた状態で行います。むしろリスクが高いのは、専門医不在のまま鎮静薬だけを使う体制です。ご不安な点は診察時に遠慮なくお尋ねください。</div>
+      </details>
+      <details>
+        <summary>どの麻酔を選べばよいかわかりません。</summary>
+        <div class="ans">ご自身で決めていただく必要はありません。施術の内容・範囲・所要時間と、既往歴や体格、痛みへの不安の強さを踏まえて、麻酔科医が適切な深さをご提案します。「痛みが怖い」のか「施術中の記憶を残したくない」のか、目的を教えていただければ、それに合わせた設計が可能です。</div>
+      </details>
+      <details>
+        <summary>施術中に目が覚めてしまうことはありませんか。</summary>
+        <div class="ans">全身麻酔では、麻酔科医が麻酔深度をモニタリングしながら薬剤の投与量を調整するため、施術中に意識が戻ることはありません。静脈麻酔は「半分眠っているような状態」を保つ麻酔ですので、うっすらと意識が戻る場面はありえますが、痛みを強く感じる状態にはならないよう調整します。</div>
+      </details>
+      <details>
+        <summary>絶食はどうしても必要ですか。少しなら食べても大丈夫では。</summary>
+        <div class="ans">必要です。麻酔中は嘔吐反射や気道を守る反射が抑えられるため、胃の内容物が気道へ流れ込む「誤嚥」が起こりえます。誤嚥性肺炎は重篤な合併症です。<b>施術予定時刻の5時間前から食事、2時間前から飲み物を制限</b>していただきます。守られていない場合、安全のため施術を延期します。ご予約の時間から逆算してご準備ください。</div>
+      </details>
+      <details>
+        <summary>施術後はすぐに帰れますか。仕事に戻れますか。</summary>
+        <div class="ans">麻酔から覚めたあと、回復室で状態が安定するまで休んでいただきます。必要な時間は麻酔の種類と施術内容によって異なります。当日は判断力や反射が完全には戻っていないため、<b>車・バイク・自転車の運転はできません。</b>重要な会議や契約など、判断を要する予定も避けてください。翌日以降の活動については、施術内容に応じて個別にご案内します。</div>
+      </details>
+      <details>
+        <summary>1回の麻酔で、複数の施術をまとめて受けられますか。</summary>
+        <div class="ans">可能な場合が多く、むしろ麻酔下で施術を行う利点のひとつです。麻酔をかける回数が減るぶん、通院の負担も麻酔の費用も抑えられます。ただし施術の組み合わせによっては、同日に行うと肌への負担が大きすぎる場合や、所要時間の関係で分けたほうがよい場合があります。ご希望の施術をすべてお伝えいただければ、安全な範囲での組み合わせをご提案します。</div>
+      </details>
+      <details>
+        <summary>麻酔を使えば、必ず効果が高くなるのですか。</summary>
+        <div class="ans">いいえ。麻酔は「痛みを理由に出力を落とさずに済む」条件を整えるものであって、効果そのものを保証する手段ではありません。効果には毛質・肌質・部位・体質による個人差があり、施術によっては複数回のコースが前提になります。麻酔下であっても、肌の安全域を超える出力を用いることはありません。</div>
+      </details>
+      <details>
+        <summary>費用は保険が使えますか。</summary>
+        <div class="ans">使えません。美容目的の施術および麻酔は自由診療（自費診療）となり、公的医療保険は適用されません。麻酔の費用と施術の費用は別建てとなります。複数回プランによる割引設定もありますので、詳細は各院にお問い合わせください。</div>
+      </details>
+      <details>
+        <summary>どの院で麻酔下の施術を受けられますか。</summary>
+        <div class="ans">麻酔科医の在籍状況により、対応できる院・日程が限られます。ご希望の施術と併せて、各院またはLIGHT CLINIC 公式サイトからお問い合わせください。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLINIC ================= -->
+<section id="clinic" class="dark" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">10 — CLINIC</span>
+      <h2>LIGHT CLINIC</h2>
+      <p>医療ダイエット専門クリニックとして全国5院。麻酔科専門医による無痛治療の対応院・対応日については、各院にお問い合わせください。</p>
+    </div>
+    <div class="clinics rv" style="--line:rgba(200,164,92,.3)">
+      <div class="clinic" style="background:rgba(255,255,255,.03)"><div class="c-n" style="color:#fff">大阪院</div><div class="c-y">UMEDA</div></div>
+      <div class="clinic" style="background:rgba(255,255,255,.03)"><div class="c-n" style="color:#fff">名古屋院</div><div class="c-y">SAKAE</div></div>
+      <div class="clinic" style="background:rgba(255,255,255,.03)"><div class="c-n" style="color:#fff">新宿院</div><div class="c-y">SHINJUKU</div></div>
+      <div class="clinic" style="background:rgba(255,255,255,.03)"><div class="c-n" style="color:#fff">表参道院</div><div class="c-y">OMOTESANDO</div></div>
+      <div class="clinic" style="background:rgba(255,255,255,.03)"><div class="c-n" style="color:#fff">福岡院</div><div class="c-y">FUKUOKA</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL ================= -->
+<section class="final">
+  <div class="wrap">
+    <h2>痛みを我慢して美容医療を受ける時代に、<br>終止符を打つ。</h2>
+    <p>麻酔科医が現場にいることで、変えられることがあります。効果を諦めなくていい治療を、これからも広げていきます。</p>
+    <div class="cta">
+      <a class="btn primary" href="https://light-clinic.co.jp/service/anesthesia-2/" target="_blank" rel="noopener">LIGHT CLINIC 公式サイト</a>
+      <a class="btn ghost" href="index.html">監修医のプロフィール</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div style="font-family:'Noto Serif JP',serif;color:#fff;letter-spacing:.14em;margin-bottom:6px">吹田 真一 / SHINICHI FUKITA, M.D.</div>
+      <div>麻酔科医・集中治療医／LIGHT CLINIC 総合監修医</div>
+    </div>
+    <div>
+      <a href="index.html">プロフィール</a>　·
+      <a href="https://light-clinic.co.jp/" target="_blank" rel="noopener">LIGHT CLINIC</a>　·
+      <a href="https://shinmedical.net/" target="_blank" rel="noopener">メンズ部門</a>　·
+      <a href="https://lit.link/drfukky" target="_blank" rel="noopener">Link in bio</a>
+    </div>
+  </div>
+  <div class="wrap note">
+    <b>【自由診療に関する表示】</b><br>
+    本ページで紹介している麻酔および施術は、公的医療保険が適用されない<b>自由診療（自費診療）</b>です。掲載している費用は麻酔にかかる標準的な費用であり、施術費用は別途必要です。料金は改定される場合があるため、最新の情報は各院にご確認ください。<br>
+    治療の効果には個人差があり、すべての方に同様の結果を保証するものではありません。施術によっては複数回の治療が必要となります。麻酔および各施術には本ページに記載したリスク・副作用があり、これらがすべてではありません。施術の可否・内容・回数は、診察のうえ医師が判断します。<br>
+    取り扱い機器・施術内容・対応院は変更される場合があります。使用機器の薬事承認状況を含む詳細、および実際の診療内容については、各クリニックの診療案内および担当医の説明をご確認ください。<br>
+    本ページは医師個人による医療情報の解説であり、特定の施術の受診を勧誘するものではありません。
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var onScroll=function(){ nav.classList.toggle('solid', window.scrollY>60); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el,i){
+    el.style.transitionDelay=(Math.min(i%4,3)*70)+'ms';
+    io.observe(el);
+  });
+})();
+</script>
+</body>
+</html>

@@ -252,6 +252,37 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
 .tl .yr{font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.2em;color:var(--gold);margin-bottom:6px;display:block}
 .tl h4{font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600;margin-bottom:8px;letter-spacing:.03em}
 .tl p{font-size:14px;font-weight:300;color:#39424f;max-width:660px}
+.dark .tl p{color:rgba(255,255,255,.72)}
+
+/* ---------- supervising physician ---------- */
+.sup{display:grid;grid-template-columns:290px 1fr;gap:54px;align-items:start}
+@media(max-width:880px){.sup{grid-template-columns:1fr;gap:34px}}
+.sup .ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:linear-gradient(160deg,#16273d,#0b1522)}
+.sup .ph img{width:100%;height:100%;object-fit:cover;object-position:center 28%;display:block}
+.sup .ph:after{content:"";position:absolute;inset:12px;border:1px solid rgba(200,164,92,.5);pointer-events:none}
+.sup .nm{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+.sup .nm .jp{font-family:"Noto Serif JP",serif;font-size:clamp(26px,3.4vw,34px);font-weight:600;letter-spacing:.12em;color:#fff}
+.sup .nm .en{font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.3em;color:var(--gold-l)}
+.sup .titles{font-size:13.5px;color:rgba(255,255,255,.7);font-weight:300;letter-spacing:.04em;
+  padding-bottom:24px;margin-bottom:26px;border-bottom:1px solid rgba(200,164,92,.28)}
+.creds{margin-top:24px;border-top:1px solid rgba(200,164,92,.28)}
+.creds div{padding:15px 0 15px 18px;position:relative;font-size:13px;font-weight:300;color:rgba(255,255,255,.72);
+  line-height:1.7;border-bottom:1px solid rgba(255,255,255,.09)}
+.creds div:last-child{border-bottom:none}
+.creds div:before{content:"";position:absolute;left:0;top:23px;width:8px;height:1px;background:var(--gold)}
+.creds div b{display:block;font-family:"Noto Serif JP",serif;font-size:14.5px;font-weight:600;color:#fff;margin-bottom:3px;letter-spacing:.03em}
+.sup .voice p{font-size:14.5px;font-weight:300;color:rgba(255,255,255,.8);margin-bottom:17px;line-height:2}
+.sup .voice p:last-child{margin-bottom:0}
+.sup .voice em{font-style:normal;color:var(--gold-l)}
+.sup-tl{margin-top:56px;border-top:1px solid rgba(200,164,92,.28);padding-top:48px}
+.sup-tl > h4{font-family:"Noto Serif JP",serif;font-size:18px;font-weight:600;color:#fff;
+  margin-bottom:34px;letter-spacing:.08em}
+.authority{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+@media(max-width:820px){.authority{grid-template-columns:1fr}}
+.au{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);padding:24px 22px}
+.au .p{font-family:"Cormorant Garamond",serif;font-size:11px;letter-spacing:.26em;color:var(--gold);margin-bottom:10px}
+.au h5{font-family:"Noto Serif JP",serif;font-size:15px;font-weight:600;color:#fff;margin-bottom:8px;line-height:1.65}
+.au p{font-size:12.5px;font-weight:300;color:rgba(255,255,255,.62);line-height:1.8}
 
 /* ---------- notice / risk ---------- */
 .notice{border:1px solid var(--line);background:var(--paper-2);padding:32px 30px;margin-bottom:18px}
@@ -314,12 +345,13 @@ footer a:hover{color:var(--gold-l)}
     <a class="brand" href="index.html">吹田 真一<small>SHINICHI FUKITA, M.D.</small></a>
     <ul>
       <li><a href="#why">なぜ無痛か</a></li>
-      <li><a href="#problem">事故が起きる理由</a></li>
+      <li><a href="#problem">事故の構造</a></li>
       <li><a href="#types">麻酔の種類</a></li>
       <li><a href="#hair">医療脱毛</a></li>
       <li><a href="#skin">肌治療</a></li>
       <li><a href="#safety">安全管理</a></li>
-      <li><a href="#flow">当日の流れ</a></li>
+      <li><a href="#doctor">監修医</a></li>
+      <li><a href="#flow">流れ</a></li>
       <li><a href="#price">料金</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li class="keep"><a class="back" href="index.html">プロフィール</a></li>
@@ -343,11 +375,11 @@ footer a:hover{color:var(--gold-l)}
       医療脱毛や肌治療で本来必要な設定を、安全に成立させるための医学的な条件として、麻酔科専門医が麻酔を管理しています。
     </p>
     <div class="byline">
-      監修・麻酔管理 ── <strong>吹田 真一</strong>／麻酔科専門医・集中治療医。国立循環器病研究センターで心臓大血管手術の麻酔管理と重症患者の全身管理に従事。LIGHT CLINIC 総合監修医。
+      監修・麻酔管理 ── <strong>吹田 真一</strong>／日本麻酔科学会 麻酔科専門医・集中治療医。国立循環器病研究センターで心臓大血管手術の麻酔管理と重症患者の全身管理に従事し、経食道心エコー（JB-POT 認定）による高度モニタリングを担当。三次救急・離島医療、明美ちゃん基金を通じた小児心臓病の国際医療支援を経て、LIGHT CLINIC 総合監修医。
     </div>
     <div class="cta">
       <a class="btn primary" href="#types">3つの麻酔を見る</a>
-      <a class="btn ghost" href="#why">なぜ無痛で行うのか</a>
+      <a class="btn ghost" href="#doctor">監修医について</a>
     </div>
   </div>
 </header>
@@ -457,7 +489,7 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= 02 WHY ACCIDENTS ================= -->
+<!-- ================= 02 THE REAL PROBLEM ================= -->
 <section id="problem" class="dark">
   <div class="wrap">
     <div class="sec-head rv">
@@ -661,7 +693,7 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= 03 HAIR REMOVAL ================= -->
+<!-- ================= 04 HAIR REMOVAL ================= -->
 <section id="hair">
   <div class="wrap">
     <div class="sec-head rv">
@@ -696,7 +728,7 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= 04 SKIN ================= -->
+<!-- ================= 05 SKIN ================= -->
 <section id="skin" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head rv">
@@ -783,7 +815,7 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= 05 SAFETY ================= -->
+<!-- ================= 06 SAFETY ================= -->
 <section id="safety" class="dark">
   <div class="wrap">
     <div class="sec-head rv">
@@ -838,11 +870,113 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= 06 FLOW ================= -->
+<!-- ================= 07 SUPERVISING PHYSICIAN ================= -->
+<section id="doctor" class="dark" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv" style="border-top:1px solid rgba(200,164,92,.28);padding-top:clamp(60px,8vw,100px)">
+      <span class="num">07 — SUPERVISING PHYSICIAN</span>
+      <h2>その体制を設計しているのは、誰か。</h2>
+      <p>安全な体制は、放っておいて存在するものではありません。誰かが、どこかで身につけた基準を持ち込んで、初めて成立します。</p>
+    </div>
+
+    <div class="sup">
+      <div class="rv">
+        <div class="ph"><img src="portrait.jpg" alt="麻酔科専門医 吹田真一 手術室にて"></div>
+        <div class="creds">
+          <div><b>日本麻酔科学会 麻酔科専門医</b>2020年取得</div>
+          <div><b>JB-POT 認定</b>日本周術期経食道心エコー</div>
+          <div><b>国立循環器病研究センター</b>麻酔科／集中治療 勤務</div>
+          <div><b>三次救急・離島医療</b>初期研修／鹿児島・喜界島</div>
+          <div><b>国際医療支援</b>明美ちゃん基金 小児心臓病支援</div>
+        </div>
+      </div>
+      <div class="rv">
+        <div class="nm">
+          <span class="jp">吹田 真一</span>
+          <span class="en">SHINICHI FUKITA, M.D.</span>
+        </div>
+        <div class="titles">麻酔科専門医・集中治療医／LIGHT CLINIC 総合監修医／LIGHT CLINIC メンズ部門 統括院長</div>
+
+        <div class="voice">
+          <p>私が麻酔を学んだのは、美容医療の現場ではありません。</p>
+          <p>国立循環器病研究センターは、日本の循環器医療の中核施設です。私はそこで、心臓大血管手術の麻酔管理と、重症患者の全身管理を担当していました。心臓を扱う手術では、血圧が数十秒で崩れます。モニターの数値ひとつを読み違えることが、そのまま結果に直結する。そういう現場です。</p>
+          <p>そこで身についたのは、手技よりも先に <em>「安全は最初から設計しておくもの」</em> という考え方でした。急変してから対応を考えるのでは間に合いません。起こりうることを事前に洗い出し、必要な人員・機器・薬剤を配置し終えてから麻酔を始める。それが当たり前の環境にいました。</p>
+          <p>美容医療に関わるようになって驚いたのは、その設計がほとんど存在しないことでした。麻酔科医が在籍するクリニックは、業界全体の1%にも満たない。痛みへの配慮は「我慢してもらう」か「出力を下げる」かで済まされ、眠らせる場合も、施術医が片手間に薬を足している——そうした場面を見てきました。</p>
+          <p>ですから私が美容医療で麻酔を担当するとき、やっていることは手術室と変わりません。事前に全身を評価し、手術室と同等の麻酔器とモニターを整え、麻酔科医は麻酔だけを担当し、覚醒して安全に帰れる状態になるまで見届ける。特別なことをしているつもりはありません。<em>麻酔とは本来そういうものだ</em>、というだけです。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sup-tl rv">
+      <h4>麻酔科医としての歩み</h4>
+      <div class="tl">
+        <div class="item">
+          <span class="yr">RESIDENCY</span>
+          <h4>京都随一の救急病院で初期研修 —— 三次救急の最前線</h4>
+          <p>京都で最も救急搬送を受け入れる病院で、2年間三次救急の現場に立つ。事故・急変・発作——「迷っている時間こそが最大のリスクになる」ことを叩き込まれ、重症患者の対応に明け暮れた。</p>
+        </div>
+        <div class="item">
+          <span class="yr">KIKAIJIMA</span>
+          <h4>鹿児島・喜界島での離島医療</h4>
+          <p>専門医も設備も限られた島で「この患者さんを診られるのは自分しかいない」という重さを背負い、医師としての総合力と覚悟を磨く。限られた条件のなかで最善の安全を組み立てる経験は、いまの診療の礎になっている。</p>
+        </div>
+        <div class="item">
+          <span class="yr">ANESTHESIA</span>
+          <h4>麻酔科医としてのキャリアをスタート</h4>
+          <p>全身麻酔・区域麻酔・硬膜外麻酔から周術期管理まで、手術室の最前線で研鑽を積む。数値と手技だけを頼りに患者さんの命を預かる緊張感が、その後の医療観すべての原点になる。</p>
+        </div>
+        <div class="item">
+          <span class="yr">NCVC</span>
+          <h4>国立循環器病研究センター 麻酔科／集中治療</h4>
+          <p>日本の循環器医療の中核施設で、心臓大血管手術の麻酔管理と重症患者の全身管理に従事。経食道心エコー（JB-POT 認定）を用いた高度なモニタリングを担当。呼吸と循環を秒単位で読み続ける、麻酔科医としてもっとも緊張度の高い領域。</p>
+        </div>
+        <div class="item">
+          <span class="yr">INTERNATIONAL</span>
+          <h4>明美ちゃん基金を通じた国際的な小児心臓病支援</h4>
+          <p>先天性心疾患の子どもたちを救う取り組みに関わり、海外での医療支援活動にも従事。文化も設備も異なる環境で、限られた条件のもとに安全を組み立てる経験を重ねる。</p>
+        </div>
+        <div class="item">
+          <span class="yr">2020</span>
+          <h4>日本麻酔科学会 麻酔科専門医を取得</h4>
+          <p>循環器麻酔・集中治療での研鑽を積み重ね、麻酔科専門医の資格を取得。</p>
+        </div>
+        <div class="item">
+          <span class="yr">2022 —</span>
+          <h4>LIGHT CLINIC 開院、麻酔科医による無痛治療を確立</h4>
+          <p>2022年に大阪院を開院。2023年にはメンズ部門を立ち上げ、麻酔科医のコントロール下での無痛治療という領域を確立。現在は大阪・名古屋・新宿・表参道・福岡の5院体制で、総合監修医として診療品質と安全管理を統括している。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="authority">
+      <div class="au rv">
+        <div class="p">PRESS</div>
+        <h5>The Wall Street Journal 掲載</h5>
+        <p>「Next Era Leaders」特集にて、日本におけるエビデンスに基づく肥満治療と予防医療の推進について取り上げられる。</p>
+      </div>
+      <div class="au rv">
+        <div class="p">BOOK</div>
+        <h5>『年間1万人が成功する！ 医師が教える、正しいダイエットの見極め方』</h5>
+        <p>ゴマブックス／2026年1月刊。Amazon 栄養科学・医療／医学情報学の各ランキングで1位を獲得。</p>
+      </div>
+      <div class="au rv">
+        <div class="p">EDUCATION</div>
+        <h5>医療情報の発信</h5>
+        <p>YouTube「ふっきー先生」ほか各SNSで医療情報を1,300本以上発信。総再生回数は1,800万回を超える。</p>
+      </div>
+    </div>
+
+    <div class="rv" style="margin-top:36px">
+      <a class="btn ghost" href="index.html">詳しいプロフィールを見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 08 FLOW ================= -->
 <section id="flow">
   <div class="wrap narrow">
     <div class="sec-head rv">
-      <span class="num">07 — FLOW</span>
+      <span class="num">08 — FLOW</span>
       <h2>当日までの流れ</h2>
       <p>麻酔を伴う施術には、通常の美容施術にはない準備が必要です。特に絶食は、安全に直結する最も重要な項目です。</p>
     </div>
@@ -886,11 +1020,11 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= 07 PRICE ================= -->
+<!-- ================= 09 PRICE ================= -->
 <section id="price" class="dark">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="num">08 — FEE</span>
+      <span class="num">09 — FEE</span>
       <h2>麻酔の費用</h2>
       <p>下記は麻酔にかかる費用です。施術そのものの費用は別途必要となります。いずれも公的医療保険が適用されない自由診療です。</p>
     </div>
@@ -916,11 +1050,11 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= 08 RISK ================= -->
+<!-- ================= 10 RISK ================= -->
 <section id="risk">
   <div class="wrap narrow">
     <div class="sec-head rv">
-      <span class="num">09 — RISK &amp; SIDE EFFECTS</span>
+      <span class="num">10 — RISK &amp; SIDE EFFECTS</span>
       <h2>リスク・副作用について</h2>
       <p>麻酔は安全性の高い医療技術ですが、リスクがゼロの医療は存在しません。起こりうることと、それに対する備えを事前にお伝えします。</p>
     </div>
@@ -977,11 +1111,11 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= 09 FAQ ================= -->
+<!-- ================= 11 FAQ ================= -->
 <section id="faq" style="padding-top:0">
   <div class="wrap narrow">
     <div class="sec-head rv">
-      <span class="num">10 — FAQ</span>
+      <span class="num">11 — FAQ</span>
       <h2>よくあるご質問</h2>
     </div>
     <div class="faq rv">
@@ -1029,11 +1163,11 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= CLINIC ================= -->
+<!-- ================= 12 CLINIC ================= -->
 <section id="clinic" class="dark" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="num">11 — CLINIC</span>
+      <span class="num">12 — CLINIC</span>
       <h2>LIGHT CLINIC</h2>
       <p>医療ダイエット専門クリニックとして全国5院。麻酔科専門医による無痛治療の対応院・対応日については、各院にお問い合わせください。</p>
     </div>

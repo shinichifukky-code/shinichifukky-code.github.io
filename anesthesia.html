@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>全身麻酔の無痛治療 | LIGHT CLINIC ／ 麻酔科医 吹田 真一 監修</title>
-<meta name="description" content="LIGHT CLINIC の無痛治療。麻酔科専門医が全身麻酔・静脈麻酔・リラックス麻酔を管理し、痛みを理由に出力を落とさずに医療脱毛（ジェントルマックス・プロ・プラス®／針脱毛）と肌治療（ポテンツァ・ウルトラセルZi・ピコレーザー ほか）を行うための仕組みを解説します。">
+<meta name="description" content="LIGHT CLINIC の無痛治療。麻酔科専門医が全身麻酔・静脈麻酔・リラックス麻酔を管理します。美容医療で麻酔事故が起きる構造を厚生労働省・日本麻酔科学会の公表資料から解説し、医療脱毛（ジェントルマックス・プロ・プラス®／針脱毛）と肌治療を適正な出力で行うための安全管理体制をご説明します。">
 <link rel="canonical" href="https://shinichifukky-code.github.io/anesthesia.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="全身麻酔の無痛治療 | LIGHT CLINIC ／ 麻酔科医 吹田 真一 監修">
@@ -126,6 +126,31 @@ section{padding:clamp(70px,9vw,116px) 0}
 .dstack .lane.a .arw{color:#9aa3ae}
 .dstack .pair{display:grid;gap:9px}
 
+/* ---------- guideline quote ---------- */
+.gq{border:1px solid rgba(200,164,92,.34);background:rgba(200,164,92,.06);padding:28px 30px;margin:34px 0}
+.gq p{font-family:"Noto Serif JP",serif;font-size:clamp(15px,1.9vw,18.5px);line-height:1.95;color:#fff;margin:0}
+.gq p + p{margin-top:14px}
+.gq .src{margin-top:16px;padding-top:14px;border-top:1px solid rgba(200,164,92,.22);
+  font-size:11.5px;color:rgba(255,255,255,.52);font-weight:300;letter-spacing:.04em;line-height:1.8}
+.gq .src a{color:var(--gold-l);text-decoration:none;border-bottom:1px solid rgba(200,164,92,.4)}
+
+/* ---------- problem cards ---------- */
+.probs{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:42px}
+@media(max-width:860px){.probs{grid-template-columns:1fr}}
+.prob{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);padding:30px 28px;
+  display:flex;flex-direction:column}
+.prob .n{font-family:"Cormorant Garamond",serif;font-size:11.5px;letter-spacing:.26em;color:#d08b74;margin-bottom:13px}
+.prob h4{font-family:"Noto Serif JP",serif;font-size:17.5px;font-weight:600;color:#fff;margin-bottom:13px;line-height:1.65;letter-spacing:.03em}
+.prob p{font-size:13.5px;font-weight:300;color:rgba(255,255,255,.74);margin-bottom:16px}
+.prob .ev{margin-top:auto;padding-top:15px;border-top:1px dashed rgba(200,164,92,.34);
+  font-size:12.5px;color:var(--gold-l);font-weight:300;line-height:1.85}
+.prob .ev b{display:block;font-size:10.5px;letter-spacing:.18em;color:var(--gold);font-weight:500;margin-bottom:6px}
+
+/* ---------- sedation depth table ---------- */
+.depthtable td.brk,.depthtable thead th.brk{border-left:2px solid var(--gold)}
+.depthtable td.hl,.depthtable thead th.hl{background:rgba(200,164,92,.08)}
+.depthtable thead th.hl{color:var(--gold-l)}
+
 /* ---------- anesthesia cards ---------- */
 .anes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:900px){.anes{grid-template-columns:1fr}}
@@ -202,6 +227,21 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
 .equip{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
 .equip span{border:1px solid rgba(200,164,92,.4);color:var(--gold-l);font-size:11.5px;padding:5px 13px;letter-spacing:.06em}
 
+/* ---------- monitoring standard ---------- */
+.monitor{margin-top:18px;border:1px solid rgba(200,164,92,.34);background:rgba(200,164,92,.05);padding:34px 32px}
+.monitor .ico{font-family:"Cormorant Garamond",serif;font-size:11.5px;letter-spacing:.28em;color:var(--gold);margin-bottom:12px}
+.monitor h3{font-family:"Noto Serif JP",serif;font-size:clamp(18px,2.3vw,23px);font-weight:600;color:#fff;margin-bottom:12px;line-height:1.6;letter-spacing:.04em}
+.monitor > p{font-size:13.5px;font-weight:300;color:rgba(255,255,255,.7);max-width:680px}
+.mlist{list-style:none;counter-reset:m;margin-top:28px;display:grid;grid-template-columns:repeat(2,1fr);gap:2px 34px}
+@media(max-width:820px){.mlist{grid-template-columns:1fr}}
+.mlist li{counter-increment:m;position:relative;padding:14px 0 14px 42px;border-bottom:1px solid rgba(255,255,255,.09);
+  font-size:13.5px;font-weight:300;color:rgba(255,255,255,.76);line-height:1.8}
+.mlist li:before{content:counter(m,decimal-leading-zero);position:absolute;left:0;top:15px;
+  font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.1em;color:var(--gold)}
+.mlist li b{display:block;font-size:14.5px;font-weight:600;color:#fff;font-family:"Noto Serif JP",serif;margin-bottom:3px;letter-spacing:.03em}
+.msrc{margin-top:22px;font-size:11.5px;color:rgba(255,255,255,.5);font-weight:300;line-height:1.85}
+.msrc a{color:var(--gold-l);text-decoration:none;border-bottom:1px solid rgba(200,164,92,.4)}
+
 /* ---------- timeline ---------- */
 .tl{position:relative;margin-left:8px}
 .tl:before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--gold),rgba(200,164,92,.15))}
@@ -274,6 +314,7 @@ footer a:hover{color:var(--gold-l)}
     <a class="brand" href="index.html">吹田 真一<small>SHINICHI FUKITA, M.D.</small></a>
     <ul>
       <li><a href="#why">なぜ無痛か</a></li>
+      <li><a href="#problem">事故が起きる理由</a></li>
       <li><a href="#types">麻酔の種類</a></li>
       <li><a href="#hair">医療脱毛</a></li>
       <li><a href="#skin">肌治療</a></li>
@@ -407,7 +448,7 @@ footer a:hover{color:var(--gold-l)}
 
     <div class="body-copy rv" style="margin-top:44px">
       <p>厄介なのは、A を選んでも患者さんにはその場でわからないことです。出力を落とした施術は「痛くなかった」という良い印象すら残します。効果が足りないと気づくのは、数か月後に「思ったより減っていない」と感じたときです。</p>
-      <p>美容医療の現場に、麻酔の専門家はほとんどいません。麻酔科医が在籍するクリニックは、業界全体の1%にも満たないのが現実です。だからこそ多くの施設では、この二択そのものを避けられません。</p>
+      <p>では、なぜ多くの施設はこの二択から抜け出せないのか。そして、抜け出そうとして麻酔を導入した施設で、なぜ事故が起きているのか。次章で、公的機関と学会が公表している資料をもとに整理します。</p>
     </div>
     <div class="lead-q rv">痛みを取り除くことは、<br>「適正な出力で治療する」ための前提条件です。</div>
     <div class="body-copy rv">
@@ -416,11 +457,112 @@ footer a:hover{color:var(--gold-l)}
   </div>
 </section>
 
-<!-- ================= 02 TYPES ================= -->
-<section id="types" class="dark">
+<!-- ================= 02 WHY ACCIDENTS ================= -->
+<section id="problem" class="dark">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="num">02 — ANESTHESIA</span>
+      <span class="num">02 — THE REAL PROBLEM</span>
+      <h2>美容医療で麻酔の事故が起きるのは、<br>薬のせいではありません。</h2>
+      <p>「麻酔科医が麻酔をかけていない」という体制の問題です。これは私見ではなく、厚生労働省の検討会と日本麻酔科学会が、公式の文書で指摘していることです。</p>
+    </div>
+
+    <div class="gq rv">
+      <p>「周術期における循環器系及び呼吸器系管理の経験が少なく術中出血や呼吸不全等の緊急事態に対応できない医師が（全身麻酔下での）手術を行ったり、緊急時の対応ができる病院等との連携体制が構築されていない状態で侵襲性が高い治療が行われている事例など、生命・健康に対するリスクが非常に高い事例についても報告された。」</p>
+      <p>「全身管理の経験がない医師による全身麻酔下での手術や、緊急時の対応ができる病院等との連携体制が構築されていない事例等、安全な医療を提供する上での最低限の医療の質が担保されているかさえ疑わしい事例が存在し、<b>美容医療に起因する死亡事例が起きている</b>ことも報告された。」</p>
+      <div class="src">出典：厚生労働省「美容医療の適切な実施に関する検討会 報告書」令和6年11月22日 ／
+        <a href="https://www.mhlw.go.jp/content/10801000/001341003.pdf" target="_blank" rel="noopener">報告書 (PDF)</a></div>
+    </div>
+
+    <div class="body-copy rv">
+      <p>美容医療の現場に、麻酔の専門家はほとんどいません。麻酔科医が在籍するクリニックは、業界全体の1%にも満たないのが現実です。その結果、麻酔の十分な経験がないまま施術医が麻酔を兼任し、急変時のリスクマネジメントが追いつかない——という構造が生まれます。</p>
+      <p>ここで多くの方が誤解されているのが、「全身麻酔は危ないが、眠らせるだけの鎮静なら安全」という考え方です。麻酔科学の立場から言えば、これは成立しません。</p>
+    </div>
+
+    <div class="gq rv">
+      <p>「鎮静は，自然睡眠とはまったく異なる。自然睡眠では，呼吸や循環が危うくなるような事態になると目が覚めて対処できる。（中略）しかし，薬剤作用により誘導される鎮静では，一見，自然睡眠と同じように見えるが，生理学的な状態とはまったく異なる。<b>少量の鎮静薬によっても上気道閉塞が生じる可能性があり，患者の持つ病態によっては呼吸停止から心停止に至る危険性が存在する。</b>」</p>
+      <div class="src">出典：公益社団法人日本麻酔科学会 安全委員会「安全な鎮静のためのプラクティカルガイド」2章（制定 2021年11月26日／改訂 2022年6月15日）</div>
+    </div>
+
+    <div class="body-copy rv" style="margin-top:44px">
+      <p>同ガイドは、鎮静の深さを4段階に分類したうえで、その境界は「一連のもの」であり、明確に区切れないと述べています。下の表で注目していただきたいのは、<b>深鎮静の列</b>です。まだ「全身麻酔」に至っていない段階で、すでに気道への介入が必要になりうる状態に入っています。</p>
+    </div>
+
+    <div class="tablewrap rv">
+      <table class="depthtable">
+        <thead>
+          <tr>
+            <th></th><th>最小鎮静</th><th>中等度鎮静</th><th class="brk hl">深鎮静</th><th class="hl">全身麻酔</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>反応性</th><td>呼びかけに正常に反応する</td><td>呼びかけ，接触刺激で合目的的に反応</td>
+            <td class="brk hl">繰り返し，有痛性刺激後，合目的的に反応</td><td class="hl">有痛性刺激で未覚醒</td>
+          </tr>
+          <tr>
+            <th>気道</th><td>影響されない</td><td>介入不要</td>
+            <td class="brk hl">介入必要なことがある</td><td class="hl">しばしば介入必要</td>
+          </tr>
+          <tr>
+            <th>自発呼吸（換気）</th><td>影響されない</td><td>適切</td>
+            <td class="brk hl">不十分なことがある</td><td class="hl">頻繁に不十分</td>
+          </tr>
+          <tr>
+            <th>心血管機能</th><td>影響されない</td><td>通常は維持</td>
+            <td class="brk hl">通常は維持</td><td class="hl">障害されることがある</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;font-size:12px;color:rgba(255,255,255,.45);font-weight:300;line-height:1.85">
+      日本麻酔科学会「安全な鎮静のためのプラクティカルガイド」2章 表「鎮静と全身麻酔の分類と定義」より作成。同ガイドは中等度鎮静と深鎮静の間（表内の金色の線）について「反応性，気道，呼吸において大きく異なり，その安全性を考慮すると，ここでの区分は重要である」としています。
+    </p>
+
+    <div class="probs">
+      <div class="prob rv">
+        <div class="n">PROBLEM 01</div>
+        <h4>「少しだけ眠らせる」は、狙って止められない</h4>
+        <p>鎮静薬の投与量と患者ごとの反応の差によって、中等度鎮静を目標にしていても容易に深鎮静へ、さらには全身麻酔の領域へ達します。「うちは全身麻酔ではないから安全」という説明は、麻酔科学的には根拠になりません。</p>
+        <div class="ev"><b>GUIDELINE</b>「深鎮静と静脈麻酔薬による全身麻酔は，連続的で境界もあいまいで“一連のもの”である。したがって，深鎮静を目標とした場合は，全身麻酔にも対応可能な能力が求められる。」</div>
+      </div>
+      <div class="prob rv">
+        <div class="n">PROBLEM 02</div>
+        <h4>危険なのは「痛み」ではなく、呼吸と誤嚥</h4>
+        <p>眠っている患者さんに起こる緊急事態は、痛みではありません。気道閉塞・低換気・呼吸停止、そして胃の内容物が気道に流れ込む誤嚥です。いずれも数分の遅れが結果を分けます。絶食の指示を厳格に守っていただくのは、このためです。</p>
+        <div class="ev"><b>GUIDELINE</b>「深鎮静の危険性は，呼吸の抑制と誤嚥である。」「深鎮静では，気道閉塞，低換気，高二酸化炭素症，低酸素血症，呼吸停止が起こりうる。さらに，低血圧，徐脈，心停止も起こる可能性がある。」</div>
+      </div>
+      <div class="prob rv">
+        <div class="n">PROBLEM 03</div>
+        <h4>施術医が麻酔を兼任してはいけない</h4>
+        <p>これは推奨ではなく要件です。同ガイドは、患者の看視に専念する担当者の配置を推奨度A——「必ずしなければならない」——としています。施術に集中している医師は、モニターを見続けることができません。兼任とは、見張り役が不在であることと同じです。</p>
+        <div class="ev"><b>GUIDELINE（推奨度A＝必ずしなければならない）</b>「鎮静中は患者の看視に専念する医師（または看護師）を配置しなければならない。」</div>
+      </div>
+      <div class="prob rv">
+        <div class="n">PROBLEM 04</div>
+        <h4>問われるのは薬剤ではなく、体制</h4>
+        <p>「あの薬は危ない」という議論は本質ではありません。鎮静薬・鎮痛薬はいずれも、気道・呼吸・循環という生命維持の機能そのものに作用します。安全を分けるのは、何を使うかではなく、誰がどんな体制で管理するかです。</p>
+        <div class="ev"><b>GUIDELINE</b>「どの薬剤が安全で，どの薬剤が危険ということはない。（中略）医療安全の観点からは，どの鎮静薬や鎮痛薬を使用するかということではなく，どのような考え方や体制で行うかということが重要である。」</div>
+      </div>
+    </div>
+
+    <div class="gq rv" style="margin-top:42px">
+      <p>「“鎮静は全身麻酔に準ずる”と言われており，麻酔科医が担当することが望ましいが，日本のみならず世界でも全症例には対応できていないのが現実である。（中略）多くは問題なく行われているが，<b>ヒヤリハットを含めると危機的な状況が発生していることは，過去の事例が示している。</b>そのため，すべての鎮静を麻酔科医が実施できなくとも，安全な鎮静管理体制への麻酔科医の関与が希求されている。」</p>
+      <div class="src">出典：日本麻酔科学会「安全な鎮静のためのプラクティカルガイド」11章 鎮静の体制とサーベイランス ／
+        <a href="https://anesth.or.jp/files/pdf/practical_guide_for_safe_sedation_20220628.pdf" target="_blank" rel="noopener">ガイド全文 (PDF)</a></div>
+    </div>
+
+    <div class="body-copy rv" style="margin-top:38px">
+      <p>麻酔科学会自身が「麻酔科医の関与が希求されている」と書いている領域が、いま美容医療です。私たちが麻酔科専門医を麻酔管理に専従させているのは、差別化のためではありません。眠っている患者さんの呼吸と循環を預かる以上、それが最低限の条件だと考えているからです。</p>
+      <p style="font-size:12.5px;color:rgba(255,255,255,.45);margin-top:26px">※本セクションは、公的機関および学術団体が公表している文書に基づく業界全体の課題の解説であり、特定の医療機関を批判する意図はありません。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 TYPES ================= -->
+<section id="types" class="dark" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">03 — ANESTHESIA</span>
       <h2>3つの麻酔を、施術と体質に合わせて。</h2>
       <p>「全身麻酔」だけが選択肢ではありません。施術の内容・時間・痛みの強さ、そして患者さんご自身の不安の程度に応じて、麻酔科専門医が最適な深さを設計します。</p>
     </div>
@@ -523,7 +665,7 @@ footer a:hover{color:var(--gold-l)}
 <section id="hair">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="num">03 — HAIR REMOVAL</span>
+      <span class="num">04 — HAIR REMOVAL</span>
       <h2>医療脱毛を、麻酔下で。</h2>
       <p>脱毛は「痛みを取ると効果が変わる」代表的な施術です。レーザーも針も、毛根を確実に破壊できるだけのエネルギーを届けて初めて成立します。</p>
     </div>
@@ -558,7 +700,7 @@ footer a:hover{color:var(--gold-l)}
 <section id="skin" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="num">04 — SKIN TREATMENT</span>
+      <span class="num">05 — SKIN TREATMENT</span>
       <h2>肌治療を、本来の設定で。</h2>
       <p>肌治療でも構図は同じです。針の深さ、照射のショット数、注入する本数——効果を決める変数のほとんどが、痛みによって制限されます。</p>
     </div>
@@ -645,7 +787,7 @@ footer a:hover{color:var(--gold-l)}
 <section id="safety" class="dark">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="num">05 — SAFETY</span>
+      <span class="num">06 — SAFETY</span>
       <h2>麻酔は「かけること」より、<br>「戻すこと」が難しい。</h2>
       <p>美容医療でのトラブルの多くは、施術そのものではなく麻酔管理の体制に起因します。施術医が麻酔を兼任し、急変時の対応が追いつかない——その構造をつくらないことが、私たちの前提です。</p>
     </div>
@@ -674,6 +816,25 @@ footer a:hover{color:var(--gold-l)}
         <p>麻酔の管理は、薬を止めた時点では終わりません。意識・呼吸・循環が安定し、ご自身で安全に帰宅できる状態を確認するまでが麻酔科医の担当範囲です。回復室でのモニタリングを経てからのご帰宅となります。</p>
       </div>
     </div>
+
+    <div class="monitor rv">
+      <div class="ico">MONITORING STANDARD</div>
+      <h3>「麻酔科医が管理する」とは、<br>具体的に何をすることか。</h3>
+      <p>抽象的な安心の話ではありません。日本麻酔科学会が定めた「安全な鎮静のためのモニタリング指針」は、深鎮静中に満たすべき項目を具体的に列挙しています。麻酔を受ける施設を選ぶときは、この水準が満たされているかをご確認ください。</p>
+      <ol class="mlist">
+        <li><b>専従の看視者を置く</b>患者観察を専ら担当する医師または看護師が現場に付き添い、絶え間なく患者の状態を看視する</li>
+        <li><b>酸素化を見る</b>パルスオキシメータを装着し、酸素飽和度を看視および記録する</li>
+        <li><b>換気を見る</b>胸郭の動きと呼吸音を看視し、カプノメータ等で換気状態を常時看視および記録する</li>
+        <li><b>循環を見る</b>脈波を常時測定する。必要であれば心電図モニターを用いる</li>
+        <li><b>血圧を測る</b>原則5分間隔で測定し、必要ならば頻回に測定する</li>
+        <li><b>体温を測る</b>鎮静が長時間に及ぶ場合は体温測定を行う</li>
+      </ol>
+      <div class="msrc">
+        出典：公益社団法人日本麻酔科学会「安全な鎮静のためのモニタリング指針」（「安全な鎮静のためのプラクティカルガイド」11章に収載）／
+        <a href="https://anesth.or.jp/files/pdf/practical_guide_for_safe_sedation_20220628.pdf" target="_blank" rel="noopener">指針全文 (PDF)</a><br>
+        同ガイドはこのほか、緊急時に備えた酸素・吸引の配管または代替設備の整備、救急カート・除細動器の常備、患者看視者が一次救命処置（少なくともバッグマスクによる用手換気）を実施できることを求めています。
+      </div>
+    </div>
   </div>
 </section>
 
@@ -681,7 +842,7 @@ footer a:hover{color:var(--gold-l)}
 <section id="flow">
   <div class="wrap narrow">
     <div class="sec-head rv">
-      <span class="num">06 — FLOW</span>
+      <span class="num">07 — FLOW</span>
       <h2>当日までの流れ</h2>
       <p>麻酔を伴う施術には、通常の美容施術にはない準備が必要です。特に絶食は、安全に直結する最も重要な項目です。</p>
     </div>
@@ -729,7 +890,7 @@ footer a:hover{color:var(--gold-l)}
 <section id="price" class="dark">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="num">07 — FEE</span>
+      <span class="num">08 — FEE</span>
       <h2>麻酔の費用</h2>
       <p>下記は麻酔にかかる費用です。施術そのものの費用は別途必要となります。いずれも公的医療保険が適用されない自由診療です。</p>
     </div>
@@ -759,7 +920,7 @@ footer a:hover{color:var(--gold-l)}
 <section id="risk">
   <div class="wrap narrow">
     <div class="sec-head rv">
-      <span class="num">08 — RISK &amp; SIDE EFFECTS</span>
+      <span class="num">09 — RISK &amp; SIDE EFFECTS</span>
       <h2>リスク・副作用について</h2>
       <p>麻酔は安全性の高い医療技術ですが、リスクがゼロの医療は存在しません。起こりうることと、それに対する備えを事前にお伝えします。</p>
     </div>
@@ -801,6 +962,15 @@ footer a:hover{color:var(--gold-l)}
         <li>施術後にご自身での帰宅が困難で、付き添いを手配できない方</li>
       </ul>
     </div>
+    <div class="notice rv">
+      <h4>自由診療であることに伴う注意</h4>
+      <ul>
+        <li><b>公的医療保険が適用されません。</b>美容目的の施術および麻酔は自由診療です。</li>
+        <li><b>合併症が生じた場合の対応にも、公的医療保険が適用されない場合があります。</b>日本麻酔科学会も、自由診療において生じた合併症や事故に対し、公的医療保険制度による対応が困難となる可能性を課題として指摘しています。施術を受ける前に、合併症が起きた場合の対応方針と連携医療機関について、必ずご確認ください。</li>
+        <li><b>厚生労働省は、有害事象が起きた場合に患者が相談できる連絡先（連携先の医療機関を含む）を医療機関が明らかにする仕組みの導入を検討しています。</b>受診先を選ぶ際の確認事項としてお役立てください。</li>
+      </ul>
+    </div>
+
     <p class="rv" style="margin-top:22px;font-size:13px;color:var(--muted);font-weight:300;line-height:1.9">
       該当する項目があっても、状態によっては麻酔が可能な場合があります。自己判断で諦めず、診察時に必ずお伝えください。逆に、該当がなくても診察の結果、安全のために麻酔をお断りすることがあります。
     </p>
@@ -811,13 +981,17 @@ footer a:hover{color:var(--gold-l)}
 <section id="faq" style="padding-top:0">
   <div class="wrap narrow">
     <div class="sec-head rv">
-      <span class="num">09 — FAQ</span>
+      <span class="num">10 — FAQ</span>
       <h2>よくあるご質問</h2>
     </div>
     <div class="faq rv">
       <details>
         <summary>全身麻酔と聞くと怖いのですが、美容の施術で使って大丈夫なのでしょうか。</summary>
         <div class="ans">全身麻酔そのものは、外科手術で日常的に行われている確立された医療技術です。重要なのは「誰が、どんな体制で管理するか」です。当院では施術医とは別に麻酔科専門医が麻酔管理に専従し、手術室と同等の麻酔器・生体モニター・急変対応の薬剤と器材を備えた状態で行います。むしろリスクが高いのは、専門医不在のまま鎮静薬だけを使う体制です。ご不安な点は診察時に遠慮なくお尋ねください。</div>
+      </details>
+      <details>
+        <summary>麻酔を受けるクリニックを選ぶとき、何を確認すればよいですか。</summary>
+        <div class="ans">当院に限らず、次の5点をお尋ねください。①<b>麻酔を担当するのは誰か</b>——施術医が兼任していないか、麻酔科専門医か。②<b>施術中、患者の監視だけを担当する人がいるか</b>——日本麻酔科学会のガイドは、これを「必ずしなければならない」項目としています。③<b>どんなモニターを使うか</b>——パルスオキシメータに加え、換気を見るカプノメータがあるか。④<b>急変時に何が用意されているか</b>——酸素・吸引、救急カート、除細動器、気道確保の器材。⑤<b>合併症が起きたときの対応と連携先の医療機関</b>。これらに明確に答えられない施設で、深い鎮静を受けることはおすすめしません。</div>
       </details>
       <details>
         <summary>どの麻酔を選べばよいかわかりません。</summary>
@@ -859,7 +1033,7 @@ footer a:hover{color:var(--gold-l)}
 <section id="clinic" class="dark" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="num">10 — CLINIC</span>
+      <span class="num">11 — CLINIC</span>
       <h2>LIGHT CLINIC</h2>
       <p>医療ダイエット専門クリニックとして全国5院。麻酔科専門医による無痛治療の対応院・対応日については、各院にお問い合わせください。</p>
     </div>
@@ -903,7 +1077,15 @@ footer a:hover{color:var(--gold-l)}
     本ページで紹介している麻酔および施術は、公的医療保険が適用されない<b>自由診療（自費診療）</b>です。掲載している費用は麻酔にかかる標準的な費用であり、施術費用は別途必要です。料金は改定される場合があるため、最新の情報は各院にご確認ください。<br>
     治療の効果には個人差があり、すべての方に同様の結果を保証するものではありません。施術によっては複数回の治療が必要となります。麻酔および各施術には本ページに記載したリスク・副作用があり、これらがすべてではありません。施術の可否・内容・回数は、診察のうえ医師が判断します。<br>
     取り扱い機器・施術内容・対応院は変更される場合があります。使用機器の薬事承認状況を含む詳細、および実際の診療内容については、各クリニックの診療案内および担当医の説明をご確認ください。<br>
-    本ページは医師個人による医療情報の解説であり、特定の施術の受診を勧誘するものではありません。
+    本ページは医師個人による医療情報の解説であり、特定の施術の受診を勧誘するものではありません。また、業界の課題に関する記述は公表資料に基づくものであり、特定の医療機関を批判する意図はありません。
+    <br><br>
+    <b>【主な参考・引用資料】</b><br>
+    ・公益社団法人日本麻酔科学会 安全委員会「安全な鎮静のためのプラクティカルガイド」制定 2021年11月26日／改訂 2022年6月15日
+    （<a href="https://anesth.or.jp/files/pdf/practical_guide_for_safe_sedation_20220628.pdf" target="_blank" rel="noopener">PDF</a>）<br>
+    ・厚生労働省「美容医療の適切な実施に関する検討会 報告書」令和6年11月22日
+    （<a href="https://www.mhlw.go.jp/content/10801000/001341003.pdf" target="_blank" rel="noopener">PDF</a>）<br>
+    ・公益社団法人日本麻酔科学会 理事長メッセージ「自由診療における麻酔行為の適正と、専門医・認定施設の品位について」2025年5月
+    （<a href="https://anesth.or.jp/files/pdf/suggestion20250521.pdf" target="_blank" rel="noopener">PDF</a>）
   </div>
 </footer>
 

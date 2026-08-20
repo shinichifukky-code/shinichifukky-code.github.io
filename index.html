@@ -202,13 +202,15 @@ section{padding:clamp(70px,9vw,120px) 0}
 
 /* ---------- guests ---------- */
 .guest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:22px 12px}
-.gcard{text-align:center}
+.gcard{text-align:center;text-decoration:none;display:block}
 .gcard img{width:86px;height:86px;object-fit:cover;border-radius:50%;border:1px solid var(--line);
-  margin:0 auto;display:block;box-shadow:0 4px 14px rgba(16,28,46,.08)}
+  margin:0 auto;display:block;box-shadow:0 4px 14px rgba(16,28,46,.08);transition:.3s}
+.gcard:hover img{border-color:var(--gold);transform:scale(1.07);box-shadow:0 8px 22px rgba(16,28,46,.16)}
 .gcard .gname{font-size:11.5px;margin-top:9px;color:#39424f;letter-spacing:.02em;line-height:1.5}
 .guests{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
-.guests span{border:1px solid var(--line);background:var(--paper-2);padding:8px 20px;border-radius:999px;
-  font-size:13.5px;letter-spacing:.06em;color:#39424f;font-weight:400}
+.guests a{border:1px solid var(--line);background:var(--paper-2);padding:8px 20px;border-radius:999px;
+  font-size:13.5px;letter-spacing:.06em;color:#39424f;font-weight:400;text-decoration:none;transition:.25s}
+.guests a:hover{border-color:var(--gold);background:rgba(200,164,92,.08)}
 .guests-note{margin-top:26px;font-size:12px;color:var(--muted);font-weight:300}
 
 /* ---------- book ---------- */
@@ -532,42 +534,42 @@ footer a:hover{color:var(--gold-l)}
       <p>YouTubeやSNSで公開されているコラボ・ご来院のみを掲載しています。(敬称略・順不同)</p>
     </div>
     <div class="guest-grid rv">
-      <div class="gcard"><img src="guest-hikaru.jpg" alt="ヒカル"><div class="gname">ヒカル</div></div>
-      <div class="gcard"><img src="guest-noah.jpg" alt="進撃のノア"><div class="gname">進撃のノア</div></div>
-      <div class="gcard"><img src="guest-gaasy.jpg" alt="ガーシー(東谷義和)"><div class="gname">ガーシー</div></div>
-      <div class="gcard"><img src="guest-purotan.jpg" alt="ぷろたん"><div class="gname">ぷろたん</div></div>
-      <div class="gcard"><img src="guest-hayashi.jpg" alt="林尚弘"><div class="gname">林尚弘</div></div>
-      <div class="gcard"><img src="guest-aozasa.jpg" alt="青笹寛史"><div class="gname">青笹寛史</div></div>
-      <div class="gcard"><img src="guest-tanimoto.jpg" alt="谷本吉紹"><div class="gname">谷本吉紹</div></div>
-      <div class="gcard"><img src="guest-tomohappy.jpg" alt="トモハッピー(齋藤友晴)"><div class="gname">トモハッピー</div></div>
-      <div class="gcard"><img src="guest-doctora.jpg" alt="ドクターA(麻生泰)"><div class="gname">ドクターA(麻生泰)</div></div>
-      <div class="gcard"><img src="guest-nokkon.jpg" alt="ノッコン寺田"><div class="gname">ノッコン寺田</div></div>
-      <div class="gcard"><img src="guest-ikechan.jpg" alt="いけちゃん"><div class="gname">いけちゃん</div></div>
-      <div class="gcard"><img src="guest-mikuno.jpg" alt="立川みくの"><div class="gname">立川みくの</div></div>
-      <div class="gcard"><img src="guest-yuipisu.jpg" alt="ゆいぴす"><div class="gname">ゆいぴす</div></div>
-      <div class="gcard"><img src="guest-sakura.jpg" alt="さくら"><div class="gname">さくら</div></div>
-      <div class="gcard"><img src="guest-kimura.jpg" alt="木村玄象"><div class="gname">木村玄象</div></div>
-      <div class="gcard"><img src="guest-anju.jpg" alt="あんじゅ先生"><div class="gname">あんじゅ先生</div></div>
-      <div class="gcard"><img src="guest-azuma.jpg" alt="東社長(ロレインブロウ)"><div class="gname">東社長</div></div>
-      <div class="gcard"><img src="guest-sakito.jpg" alt="咲人"><div class="gname">咲人</div></div>
-      <div class="gcard"><img src="guest-uehara.jpg" alt="植原ゆきな"><div class="gname">植原ゆきな</div></div>
-      <div class="gcard"><img src="guest-hamachan.jpg" alt="ハイサイ探偵団 ハマちゃん"><div class="gname">ハマちゃん</div></div>
-      <div class="gcard"><img src="guest-tsutsumi.jpg" alt="つつみひろき"><div class="gname">つつみひろき</div></div>
-      <div class="gcard"><img src="guest-iida.jpg" alt="飯田祐基"><div class="gname">飯田祐基</div></div>
-      <div class="gcard"><img src="guest-sasage.jpg" alt="捧"><div class="gname">捧</div></div>
-      <div class="gcard"><img src="guest-anizasa.jpg" alt="兄笹"><div class="gname">兄笹</div></div>
-      <div class="gcard"><img src="guest-aoyagi.jpg" alt="青柳"><div class="gname">青柳</div></div>
-      <div class="gcard"><img src="guest-ogichan.jpg" alt="おぎちゃん"><div class="gname">おぎちゃん</div></div>
-      <div class="gcard"><img src="guest-ichika.jpg" alt="いちか"><div class="gname">いちか</div></div>
-      <div class="gcard"><img src="guest-riku.jpg" alt="りく"><div class="gname">りく</div></div>
-      <div class="gcard"><img src="guest-yuyu.jpg" alt="ゆゆ"><div class="gname">ゆゆ</div></div>
-      <div class="gcard"><img src="guest-murako.jpg" alt="むらこ"><div class="gname">むらこ</div></div>
-      <div class="gcard"><img src="guest-matsujun.jpg" alt="松潤(キャバ嬢MG)"><div class="gname">松潤(キャバ嬢MG)</div></div>
+      <a class="gcard" href="https://www.youtube.com/watch?v=uHSXbMk_XRc" target="_blank" rel="noopener"><img src="guest-hikaru.jpg" alt="ヒカル"><div class="gname">ヒカル</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=AcZqysgL1OY" target="_blank" rel="noopener"><img src="guest-noah.jpg" alt="進撃のノア"><div class="gname">進撃のノア</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=Cr8CQSoLIkc" target="_blank" rel="noopener"><img src="guest-gaasy.jpg" alt="ガーシー(東谷義和)"><div class="gname">ガーシー</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=tXe5lA9t1eY" target="_blank" rel="noopener"><img src="guest-purotan.jpg" alt="ぷろたん"><div class="gname">ぷろたん</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=DB9EY_roFQ8" target="_blank" rel="noopener"><img src="guest-hayashi.jpg" alt="林尚弘"><div class="gname">林尚弘</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=_co36wd0fbI" target="_blank" rel="noopener"><img src="guest-aozasa.jpg" alt="青笹寛史"><div class="gname">青笹寛史</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=rzEHVMwOcSk" target="_blank" rel="noopener"><img src="guest-tanimoto.jpg" alt="谷本吉紹"><div class="gname">谷本吉紹</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=uhnjLnPIptk" target="_blank" rel="noopener"><img src="guest-tomohappy.jpg" alt="トモハッピー(齋藤友晴)"><div class="gname">トモハッピー</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=0cLGXgpeHb0" target="_blank" rel="noopener"><img src="guest-doctora.jpg" alt="ドクターA(麻生泰)"><div class="gname">ドクターA(麻生泰)</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=-GPIEGk9Ft8" target="_blank" rel="noopener"><img src="guest-nokkon.jpg" alt="ノッコン寺田"><div class="gname">ノッコン寺田</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=ExbE0I9dvM8" target="_blank" rel="noopener"><img src="guest-ikechan.jpg" alt="いけちゃん"><div class="gname">いけちゃん</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=zuuGS4LOULA" target="_blank" rel="noopener"><img src="guest-mikuno.jpg" alt="立川みくの"><div class="gname">立川みくの</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=oeEuBLAL1O0" target="_blank" rel="noopener"><img src="guest-yuipisu.jpg" alt="ゆいぴす"><div class="gname">ゆいぴす</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=44MWN7jsrGg" target="_blank" rel="noopener"><img src="guest-sakura.jpg" alt="さくら"><div class="gname">さくら</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=V7CBtuRorGU" target="_blank" rel="noopener"><img src="guest-kimura.jpg" alt="木村玄象"><div class="gname">木村玄象</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=RfHN2uVlnoE" target="_blank" rel="noopener"><img src="guest-anju.jpg" alt="あんじゅ先生"><div class="gname">あんじゅ先生</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=jkRXvXKaXqk" target="_blank" rel="noopener"><img src="guest-azuma.jpg" alt="東社長(ロレインブロウ)"><div class="gname">東社長</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=qr0hKujcg0A" target="_blank" rel="noopener"><img src="guest-sakito.jpg" alt="咲人"><div class="gname">咲人</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=XO8orokUaIw" target="_blank" rel="noopener"><img src="guest-uehara.jpg" alt="植原ゆきな"><div class="gname">植原ゆきな</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=6vYZOuHfw28" target="_blank" rel="noopener"><img src="guest-hamachan.jpg" alt="ハイサイ探偵団 ハマちゃん"><div class="gname">ハマちゃん</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=DXrLJhbzCqM" target="_blank" rel="noopener"><img src="guest-tsutsumi.jpg" alt="つつみひろき"><div class="gname">つつみひろき</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=0Tf-LDUm2Ug" target="_blank" rel="noopener"><img src="guest-iida.jpg" alt="飯田祐基"><div class="gname">飯田祐基</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=_2kJLXzWV2c" target="_blank" rel="noopener"><img src="guest-sasage.jpg" alt="捧"><div class="gname">捧</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=JfO9cReVXW0" target="_blank" rel="noopener"><img src="guest-anizasa.jpg" alt="兄笹"><div class="gname">兄笹</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=N5QBjJSQnIE" target="_blank" rel="noopener"><img src="guest-aoyagi.jpg" alt="青柳"><div class="gname">青柳</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=M5pK50LS2gE" target="_blank" rel="noopener"><img src="guest-ogichan.jpg" alt="おぎちゃん"><div class="gname">おぎちゃん</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=XYJTp9iHc0E" target="_blank" rel="noopener"><img src="guest-ichika.jpg" alt="いちか"><div class="gname">いちか</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=tvT4CjtjzzA" target="_blank" rel="noopener"><img src="guest-riku.jpg" alt="りく"><div class="gname">りく</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=Jy8NteELHpA" target="_blank" rel="noopener"><img src="guest-yuyu.jpg" alt="ゆゆ"><div class="gname">ゆゆ</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=zRgnEne2rJI" target="_blank" rel="noopener"><img src="guest-murako.jpg" alt="むらこ"><div class="gname">むらこ</div></a>
+      <a class="gcard" href="https://www.youtube.com/watch?v=Qn9wcWAOKRw" target="_blank" rel="noopener"><img src="guest-matsujun.jpg" alt="松潤(キャバ嬢MG)"><div class="gname">松潤(キャバ嬢MG)</div></a>
     </div>
     <div class="guests rv">
-      <span>松浦勝人</span>
-      <span>中村りおん</span>
-      <span>玉田響</span>
+      <a href="https://x.com/maxmatsuuratwit/status/2087115968090923432" target="_blank" rel="noopener">松浦勝人</a>
+      <a href="https://x.com/Rion_Nakamura/status/2076621322243993847" target="_blank" rel="noopener">中村りおん</a>
+      <a href="https://x.com/HibikiTamada/status/2089664975975628947" target="_blank" rel="noopener">玉田響</a>
     </div>
     <p class="guests-note rv">※公式YouTubeチャンネル・SNSにて公開済みのご来院・コラボ出演をもとに掲載しています。</p>
   </div>
